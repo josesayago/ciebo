@@ -11,7 +11,76 @@ Author URI: http://josesayago.com
  * Paleta de Colores
  */
 /**
+ * Mixins
+ */
+/**
  * Tipografías
  */
+/**
+ * Cuerpo
+ */
+body {
+  padding: 80px 0 0 0; }
+
+/**
+ * Menu Superior
+ */
+.admin-bar nav {
+  margin: 32px 0 0 0; }
+
+.navbar {
+  background: rgba(28, 107, 77, 0.7);
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  text-shadow: none;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  -o-text-shadow: none;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1.188em;
+  text-transform: uppercase;
+  color: white !important; }
+
+.navbar-brand,
+.navbar-nav li a {
+  line-height: 80px;
+  height: 80px;
+  padding-top: 1.5em;
+  color: white !important;
+  vertical-align: bottom;
+  margin-left: -2em;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  text-shadow: none;
+  -webkit-text-shadow: none;
+  -moz-text-shadow: none;
+  -o-text-shadow: none; }
+
+.navbar-brand {
+  padding: 0 0 0 1em; }
+
+.navbar-toggle {
+  vertical-align: bottom;
+  margin-top: 1.5em; }
+
+.navbar-toggle {
+  border-color: #1c6b4d !important; }
+
+.navbar-toggle .icon-bar {
+  background-color: white !important; }
+
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+  background-color: #1c6b4d !important;
+  border-color: rgba(28, 107, 77, 0.7); }
+
+.navbar-nav li a:last-child {
+  margin-right: 1em; }
 
 /*# sourceMappingURL=style.css.map */

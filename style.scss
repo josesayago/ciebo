@@ -9,7 +9,8 @@ Author URI: http://josesayago.com
 /**
  * Paleta de Colores
  */
-$green_1: 	rgba( 28, 107,  77, 1);
+$green_1_solid: 	rgba( 28, 107,  77, 1);
+$green_1_half: 		rgba( 28, 107,  77, 0.7);
 $green_2: 	rgba( 51, 178, 178, 1);
 $green_3: 	rgba(128, 168,  66, 1);
 $gray_1: 	rgba( 78,  78,  78, 1);
@@ -22,6 +23,61 @@ $orange: 	rgba(215,  90,  36, 1);
 $yellow: 	rgba(218, 128,  25, 1);
 $aqua: 		rgba(  6, 147, 166, 1);
 /**
+ * Mixins
+ */
+@mixin shadows-off {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-o-box-shadow: none;
+	text-shadow: none;
+	-webkit-text-shadow: none;
+	-moz-text-shadow: none;
+	-o-text-shadow: none;
+}
+/**
  * Tipografías
  */
-$fonts: 'Noto Sans', 'Merriweather', sans-serif;
+$noto-sans: 'Noto Sans', sans-serif;
+$merriweather: 'Merriweather', sans-serif;
+/**
+ * Cuerpo
+ */
+body { padding: 80px 0 0 0; }
+/**
+ * Menu Superior
+ */
+.admin-bar nav { margin: 32px 0 0 0; }
+.navbar {
+	background: $green_1_half;
+	@include shadows-off;
+	font-family: $noto-sans;
+	font-weight: bold;
+	font-size: 1.188em;
+	text-transform: uppercase;
+	color: $white !important;
+}
+.navbar-brand,
+.navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 1.5em;
+    color: $white !important;
+    vertical-align: bottom;
+    margin-left: -2em;
+    @include shadows-off;
+}
+.navbar-brand { padding: 0 0 0 1em; }
+.navbar-toggle {
+	vertical-align: bottom;
+	margin-top: 1.5em;
+}
+.navbar-toggle { border-color: $green_1_solid !important; }
+.navbar-toggle .icon-bar { background-color: $white !important; }
+.navbar-toggle:hover,
+.navbar-toggle:active,
+.navbar-toggle:focus {
+	background-color: $green_1_solid !important;
+	border-color: $green_1_half;
+}
+.navbar-nav li a:last-child { margin-right: 1em; }
