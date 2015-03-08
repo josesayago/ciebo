@@ -30,6 +30,20 @@ add_theme_support( 'custom-header' );
 // Menus
 add_theme_support( 'menus' );
 
+function property_widgets_init() {
+
+  register_sidebar( array(
+    'name'          => 'Buscador de Propiedades',
+    'id'            => 'property_search',
+    'before_widget' => '<div>',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h2>',
+    'after_title'   => '</h2>',
+  ) );
+
+}
+add_action( 'widgets_init', 'property_widgets_init' );
+
 // Menu output mods
 class Bootstrap_walker extends Walker_Nav_Menu {
 
@@ -132,7 +146,7 @@ if( !function_exists("theme_styles") ) {
         wp_enqueue_style( 'bootstrap' );
         wp_register_style( 'bootstrap-theme', get_template_directory_uri() . '/assets/bootstrap-3.3.2/css/bootstrap-theme.min.css', array(), '3.3.2', 'all' );
         wp_enqueue_style( 'bootstrap-theme' );
-        wp_register_style( 'wpcss', get_template_directory_uri() . '/style.css', array(), '2.0', 'all' );
+        wp_register_style( 'wpcss', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpcss' );
     }
 }
@@ -167,7 +181,7 @@ add_action( 'wp_enqueue_scripts', 'theme_js' );
 function ciebo_customize_register( $wp_customize ) {
   // Front End Section
   $wp_customize->add_section( 'ciebo_front_end' , array(
-    'title'      => __( 'Opciones de ciebo', 'ciebo' ),
+    'title'      => __( 'Opciones de CIEBO', 'ciebo' ),
     'priority'   => 0,
   ) );
   // Jumbotron Quote
@@ -224,44 +238,6 @@ function ciebo_customize_register( $wp_customize ) {
         'section'        => 'ciebo_front_end',
         'settings'       => 'jumbotron_hpcalltoaction_link',
         'type'           => 'dropdown-pages',
-      )
-    )
-  );
-  // Cuenta Medicamentos
-  $wp_customize->add_setting( 'medicamentos_donados' , array(
-    'id'          => 'medicamentos_donados',
-    'default'     => 'Cantidad de Medicamentos Donados',
-    'transport'   => 'refresh',
-  ) );
-  // Control
-  $wp_customize->add_control(
-    new WP_Customize_Control(
-      $wp_customize,
-      'medicamentos_donados',
-      array(
-        'label'          => __( 'Medicamentos Donados', 'ciebo' ),
-        'section'        => 'ciebo_front_end',
-        'settings'       => 'medicamentos_donados',
-        'type'           => 'text',
-      )
-    )
-  );
-  // Alertas
-  $wp_customize->add_setting( 'homepage_alert' , array(
-    'id'          => 'homepage_alert',
-    'default'     => 'Esta es una <strong>alerta al Público</strong>',
-    'transport'   => 'refresh',
-  ) );
-  // Control
-  $wp_customize->add_control(
-    new WP_Customize_Control(
-      $wp_customize,
-      'homepage_alert',
-      array(
-        'label'          => __( 'Alerta al Público', 'ciebo' ),
-        'section'        => 'ciebo_front_end',
-        'settings'       => 'homepage_alert',
-        'type'           => 'text',
       )
     )
   );

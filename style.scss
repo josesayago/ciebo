@@ -26,14 +26,27 @@ $aqua: 		rgba(  6, 147, 166, 1);
  * Mixins
  */
 @mixin shadows-off {
-	box-shadow: none;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	-o-box-shadow: none;
-	text-shadow: none;
-	-webkit-text-shadow: none;
-	-moz-text-shadow: none;
-	-o-text-shadow: none;
+	box-shadow: 			none;
+	-webkit-box-shadow: 	none;
+	-moz-box-shadow: 		none;
+	-o-box-shadow: 			none;
+	text-shadow: 			none;
+	-webkit-text-shadow: 	none;
+	-moz-text-shadow: 		none;
+	-o-text-shadow: 		none;
+}
+@mixin color-transition {
+	-webkit-transition: all .1s linear;
+    -moz-transition: 	all .1s linear;
+    -o-transition: 		all .1s linear;
+    -ms-transition: 	all .1s linear;
+    transition: 		all .1s linear;
+}
+@mixin radius-off {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-o-border-radius: 0;
 }
 /**
  * Tipografías
@@ -50,12 +63,13 @@ body { padding: 80px 0 0 0; }
 .admin-bar nav { margin: 32px 0 0 0; }
 .navbar {
 	background: $green_1_half;
-	@include shadows-off;
 	font-family: $noto-sans;
 	font-weight: bold;
 	font-size: 1.188em;
 	text-transform: uppercase;
 	color: $white !important;
+	border: 0;
+	@include shadows-off;
 }
 .navbar-brand,
 .navbar-nav li a {
@@ -67,6 +81,11 @@ body { padding: 80px 0 0 0; }
     margin-left: -2em;
     @include shadows-off;
 }
+.navbar-nav li a:hover {
+	color: $green_1_solid !important;
+	@include color-transition;
+}
+.navbar-nav li a:hover .nohover { color: $white !important; }
 .navbar-brand { padding: 0 0 0 1em; }
 .navbar-toggle {
 	vertical-align: bottom;
@@ -81,3 +100,75 @@ body { padding: 80px 0 0 0; }
 	border-color: $green_1_half;
 }
 .navbar-nav li a:last-child { margin-right: 1em; }
+/**
+ * Jumbotron Cabecera
+ */
+.jumbotron { 
+	margin: -80px 0 0 0; 
+	background: url('http://lorempixel.com/1280/500/city'); 
+}
+.jumboquote { 
+	background: $green_2; 
+	color: $white; 
+	font-family: $merriweather;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 2.5em;
+	margin: 60px 0 0 0;
+	padding: .5em;
+}
+.jumboaction { margin: 1.5em 0 0 0; }
+.jumboaction a {
+	background: $orange;
+	color: $white;
+	margin: -.60em;
+	padding: .5em;
+	font-family: $merriweather;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.813em;
+	max-width: 141px;
+}
+.jumboaction a:hover {
+	text-decoration: none;
+}
+.jumbosearch {
+	background: $gray_2;
+	color: $white;
+	text-align: right;
+	margin-top: -290px;
+}
+.jumbosearch h2 {
+	font-family: $merriweather;
+	line-height: 1.813em;
+	font-size: 1.625em;
+	font-weight: bold;
+	font-style: italic;
+}
+.jumbosearch p {
+	font-family: $noto-sans;
+	font-size: .8em;
+	line-height: .8em;
+}
+.jumbosearch select {
+	width: 100%;
+	color: $gray_4;
+	border: 0;
+	@include radius-off;
+}
+.jumbosearch select:focus {
+	outline: none;
+	line-height: .8em;
+}
+.jumbosearch button {
+	text-align: center;
+	background: $orange;
+	color: $white;
+	border: 0;
+	font-family: $merriweather;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 1.188em;
+	padding: .5em;
+	@include radius-off;
+}
