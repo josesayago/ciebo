@@ -13,7 +13,9 @@ $green_1_solid: 	rgba( 28, 107,  77, 1);
 $green_1_half: 		rgba( 28, 107,  77, 0.7);
 $green_2: 	rgba( 51, 178, 178, 1);
 $green_3: 	rgba(128, 168,  66, 1);
+$green_4: 	rgba( 50, 177, 176, 1);
 $gray_1: 	rgba( 78,  78,  78, 1);
+$gray_1_half: rgba( 78, 78, 78, .8);
 $gray_2: 	rgba(128, 128, 128, 1);
 $gray_3: 	rgba(153, 153, 153, 1);
 $gray_4: 	rgba( 51,  51,  51, 1);
@@ -51,21 +53,22 @@ $aqua: 		rgba(  6, 147, 166, 1);
 /**
  * Tipografías
  */
-$noto-sans: 'Noto Sans', sans-serif;
-$merriweather: 'Merriweather', sans-serif;
+$lato-sans: "Lato", sans-serif;
+$merriweather: "Merriweather", sans-serif;
 /**
  * Cuerpo
  */
-body { padding: 80px 0 0 0; }
+body { padding: 80px 0 0 0; font-weight: normal !important; }
 /**
  * Menu Superior
  */
 .admin-bar nav { margin: 32px 0 0 0; }
 .navbar {
 	background: $green_1_half;
-	font-family: $noto-sans;
+	font-family: $lato-sans;
 	font-weight: bold;
-	font-size: 1.188em;
+	font-size: 0.813em;
+	letter-spacing: 0.075em;
 	text-transform: uppercase;
 	color: $white !important;
 	border: 0;
@@ -82,11 +85,11 @@ body { padding: 80px 0 0 0; }
     @include shadows-off;
 }
 .navbar-nav li a:hover {
-	color: $green_1_solid !important;
+	color: $green_4 !important;
 	@include color-transition;
 }
 .navbar-nav li a:hover .nohover { color: $white !important; }
-.navbar-brand { padding: 0 0 0 1em; }
+.navbar-brand { padding: 1% 0 0 43%; }
 .navbar-toggle {
 	vertical-align: bottom;
 	margin-top: 1.5em;
@@ -105,50 +108,63 @@ body { padding: 80px 0 0 0; }
  */
 .jumbotron { 
 	margin: -80px 0 0 0; 
-	background: url('http://lorempixel.com/1280/500/city'); 
+	background: url('http://lorempixel.com/1280/370/city');
+	height: 370px;
 }
 .jumboquote { 
 	background: $green_2; 
 	color: $white; 
 	font-family: $merriweather;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 2.5em;
 	margin: 60px 0 0 0;
 	padding: .5em;
+	width: 281.25px;
+}
+.jumbotext {
+	width: 223px;
+	font-weight: normal;
+	font-style: italic;
+	font-size: 2em;
+	line-height: 34pt;
+	margin: 0 0 0 .5em;
 }
 .jumboaction { margin: 1.5em 0 0 0; }
 .jumboaction a {
 	background: $orange;
 	color: $white;
-	margin: -.60em;
+	margin: -.80em;
 	padding: .5em;
 	font-family: $merriweather;
-	font-weight: bold;
+	font-weight: bolder;
 	font-style: italic;
-	font-size: 1.813em;
+	font-size: 1.375em;
 	max-width: 141px;
 }
 .jumboaction a:hover {
 	text-decoration: none;
 }
 .jumbosearch {
-	background: $gray_2;
+	background: $gray_1_half;
 	color: $white;
 	text-align: right;
-	margin-top: -290px;
+	margin-top: -23.16%;
+	margin-left: 80%;
 }
 .jumbosearch h2 {
 	font-family: $merriweather;
-	line-height: 1.813em;
-	font-size: 1.625em;
-	font-weight: bold;
+	font-weight: 300;
 	font-style: italic;
+	font-size: 1.515em;
+	line-height: 18pt;
+	margin-right: 0;
+	margin-bottom: 1.160em;
 }
-.jumbosearch p {
-	font-family: $noto-sans;
-	font-size: .8em;
-	line-height: .8em;
+.jumbosearch p,
+.jumbosearch label {
+	font-family: $lato-sans;
+	font-size: .9em;
+	line-height: 0em;
+	font-weight: 300;
+	letter-spacing: .07em;
 }
 .jumbosearch select {
 	width: 100%;
@@ -168,7 +184,10 @@ body { padding: 80px 0 0 0; }
 	font-family: $merriweather;
 	font-weight: bold;
 	font-style: italic;
-	font-size: 1.188em;
-	padding: .5em;
+	font-size: 1.375em;
+	padding: .7em;
 	@include radius-off;
+}
+.jumbosearch .select-group {
+	margin: .7em 0 0 0;
 }

@@ -1,5 +1,5 @@
 WebFontConfig = {
-    google: { families: [ 'Noto+Sans:400,700:latin', 'Merriweather:400,700,400italic,700italic:latin' ] }
+    google: { families: [ 'Lato:100,300,400,700:latin', 'Merriweather:300,400,700,400italic,700italic:latin' ] }
   };
   (function() {
     var wf = document.createElement('script');

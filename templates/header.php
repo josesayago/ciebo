@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">Brand</a>
+                  <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-CIEBO.png" /></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,8 +51,10 @@
             </nav>
             <!-- /Menu -->
             <div class="row">
-                <div class="col-md-4 jumboquote">
-                    <?php echo get_theme_mod('jumbotron_hpquote'); ?>
+                <div class="col-md-3 jumboquote">
+                    <div class="jumbotext">
+                        <?php echo get_theme_mod('jumbotron_hpquote'); ?>
+                    </div>
                 </div>
             </div>
             <div class="row">
@@ -61,35 +63,43 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2 col-md-offset-10 jumbosearch">
-                    <h2>Busca Inmuebles en la Zona</h2>
-                    <p>
-                        <label for="propiedad">Propiedad</label>
-                    </p>
-                    <p>
-                        <select name="propiedad">
-                            <option value=""></option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="operacion">Operación</label>
-                    </p>
-                    <p>
-                        <select name="operacion">
-                            <option value=""></option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="ciudad">Ciudad</label>
-                    </p>
-                    <p>
-                        <select name="ciudad">
-                            <option value=""></option>
-                        </select>
-                    </p>
-                    <p class="text-center">
-                        <button>Buscar</button>
-                    </p>
+                <div class="col-md-3 col-md-offset-9 jumbosearch">
+                    <div class="col-md-10 col-md-offset-2">
+                        <h2>Busca Inmuebles en la Zona</h2>
+                        <div class="select-group">
+                            <p>
+                                <label for="propiedad">Propiedad</label>
+                            </p>
+                            <p>
+                                <select name="propiedad">
+                                    <option value=""></option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="select-group">
+                            <p>
+                                <label for="operacion">Operación</label>
+                            </p>
+                            <p>
+                                <select name="operacion">
+                                    <option value=""></option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="select-group">
+                            <p>
+                                <label for="ciudad">Ciudad</label>
+                            </p>
+                            <p>
+                                <select name="ciudad">
+                                    <option value=""></option>
+                                </select>
+                            </p>
+                        </div>
+                        <p class="text-right">
+                            <button>Buscar</button>
+                        </p>
+                    </div> 
                 </div>
             </div>
         </div>
