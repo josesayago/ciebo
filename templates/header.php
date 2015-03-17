@@ -72,7 +72,7 @@
                             </p>
                             <p>
                                 <select name="propiedad">
-                                    <option value=""></option>
+                                    <option value="">Propiedad 1</option>
                                 </select>
                             </p>
                         </div>
@@ -82,7 +82,7 @@
                             </p>
                             <p>
                                 <select name="operacion">
-                                    <option value=""></option>
+                                    <option value="">Operacion 1</option>
                                 </select>
                             </p>
                         </div>
@@ -92,7 +92,7 @@
                             </p>
                             <p>
                                 <select name="ciudad">
-                                    <option value=""></option>
+                                    <option value="">Mérida</option>
                                 </select>
                             </p>
                         </div>

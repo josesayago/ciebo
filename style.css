@@ -102,7 +102,7 @@ body {
  */
 .jumbotron {
   margin: -80px 0 0 0;
-  background: url("http://lorempixel.com/1280/370/city");
+  background: transparent url("assets/images/header-1.png");
   height: 370px; }
 
 .jumboquote {
@@ -143,7 +143,7 @@ body {
   color: white;
   text-align: right;
   margin-top: -23.16%;
-  margin-left: 80%; }
+  margin-left: 79.6%; }
 
 .jumbosearch h2 {
   font-family: "Merriweather", sans-serif;
@@ -164,12 +164,18 @@ body {
 
 .jumbosearch select {
   width: 100%;
-  color: #333333;
-  border: 0;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0; }
+  -webkit-appearance: button;
+  -webkit-border-radius: 0px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url("assets/images/select-triangle.png");
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #555;
+  white-space: nowrap;
+  height: 18px; }
 
 .jumbosearch select:focus {
   outline: none;
@@ -192,5 +198,57 @@ body {
 
 .jumbosearch .select-group {
   margin: .7em 0 0 0; }
+
+/**
+ * Instancias Single Latest Posts
+ */
+.nav-tabs {
+  border: 0 !important; }
+
+.slposts-container {
+  padding: 0 10%;
+  border: 0; }
+
+.slposts-container h2 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  font-size: 1.625em !important;
+  border: 0 !important;
+  color: #4e4e4e !important; }
+
+.slposts-container h3,
+.slposts-container h3 a {
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.188em !important;
+  border: 0 !important;
+  color: #4e4e4e !important; }
+
+.slp-instance-eventos {
+  text-align: right; }
+
+.slposts-ulist-excerpt {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #999999 !important;
+  border: 0; }
+
+.slp-instance-eventos h2,
+.slp-instance-eventos h3 a {
+  color: #0693a6 !important; }
+
+.slposts-ulist-excerpt a {
+  color: #0693a6; }
+
+.slposts-ulist-meta {
+  display: block !important;
+  border: 0 !important;
+  width: 100%;
+  font-family: "Lato", sans-serif !important;
+  padding: 0 !important; }
 
 /*# sourceMappingURL=style.css.map */
