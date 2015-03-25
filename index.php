@@ -42,19 +42,19 @@
 		<div class="col-md-4">
 			<?php
 				if( function_exists( 'single_latest_posts' ) ) {
-					$params = array(
+					$params_eventos = array(
 						'title' 			=> 'Eventos',
-						'category'			=> 'eventos',
 						'title_only'		=> 'false',
 						'auto_excerpt'		=> 'true',
 						'excerpt_length'	=> 24,
 						'excerpt_trail'		=> 'custom',
 						'excerpt_trail_cu'	=> '&#86;er m&aacute;s',
+						'category'			=> 'eventos',
 						'instance'			=> 'eventos',
 						'number_posts'		=> 1,
 						'full_meta'			=> 'true'
 					);
-					single_latest_posts( $params );
+					single_latest_posts( $params_eventos );
 				}
 			?>
 		</div>
