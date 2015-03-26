@@ -21,7 +21,8 @@ Author URI: http://josesayago.com
  */
 body {
   padding: 80px 0 0 0;
-  font-weight: normal !important; }
+  font-weight: normal !important;
+  overflow-x: hidden; }
 
 /**
  * Menu Superior
@@ -239,10 +240,10 @@ body {
 
 .slp-instance-eventos h2,
 .slp-instance-eventos h3 a {
-  color: #0693a6 !important; }
+  color: #33b2b2 !important; }
 
 .slposts-ulist-excerpt a {
-  color: #0693a6; }
+  color: #33b2b2; }
 
 .slposts-ulist-meta {
   display: block !important;
@@ -250,5 +251,167 @@ body {
   width: 100%;
   font-family: "Lato", sans-serif !important;
   padding: 0 !important; }
+
+/**
+ * ADS Footer
+ */
+.ads-footer {
+  padding: 3.5px 0;
+  background: #999999;
+  text-align: center; }
+
+.ads-footer ul,
+.ads-footer li {
+  list-style: none;
+  margin: 0 auto;
+  text-align: center; }
+
+.ads-footer li {
+  display: inline;
+  margin: 0 1%; }
+
+/**
+ * Content Rows
+ */
+.content.row {
+  min-height: 100%; }
+
+.move-down {
+  font-size: 1.5em;
+  text-align: center; }
+
+.move-down a {
+  color: #d75a24; }
+
+.bigquote {
+  text-align: center;
+  font-size: 1.875em;
+  color: #33b2b2;
+  font-family: "Merriweather", sans-serif;
+  font-style: italic; }
+
+/**
+ * Miembros
+ */
+.miembros .grupo {
+  text-align: right;
+  margin-bottom: 15px; }
+
+.miembros .grupo .col-md-3 .miembro {
+  min-height: 300px;
+  padding: 1em; }
+
+.miembros .nombre {
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  text-indent: 45%; }
+
+.miembros .cargo {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  font-size: 1.5em; }
+
+.miembros .email {
+  margin-top: 132px; }
+
+.miembros .email a {
+  color: #33b2b2; }
+
+.miembros .m1 .miembro {
+  background: transparent url("assets/images/directivos/01-clemente.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m2 .miembro {
+  background: transparent url("assets/images/directivos/02-pedro.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m3 .miembro {
+  background: transparent url("assets/images/directivos/03-gladys.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m4 .miembro {
+  background: transparent url("assets/images/directivos/04-mayuly.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m5 .miembro {
+  background: transparent url("assets/images/directivos/05-eddy.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m6 .miembro {
+  background: transparent url("assets/images/directivos/06-jacque.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m7 .miembro {
+  background: transparent url("assets/images/directivos/07-soris.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m8 .miembro {
+  background: transparent url("assets/images/directivos/08-francisco.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m9 .miembro {
+  background: transparent url("assets/images/directivos/09-annet.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m10 .miembro {
+  background: transparent url("assets/images/directivos/10-alexais.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m11 .miembro {
+  background: transparent url("assets/images/directivos/11-jenny.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .m12 .miembro {
+  background: transparent url("assets/images/directivos/12-pilar.png") no-repeat;
+  background-size: 100% 100%; }
+
+.miembros .miembro div {
+  display: none; }
+
+.miembros .miembro {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+.miembros .miembro:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #d8d8d8;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.miembros .miembro:hover:before, .miembros .miembro:focus:before, .miembros .miembro:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+
+.miembros .miembro:hover div,
+.miembros .miembro {
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

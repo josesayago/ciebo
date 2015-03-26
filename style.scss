@@ -11,8 +11,8 @@ Author URI: http://josesayago.com
  */
 $green_1_solid: 	rgba( 28, 107,  77, 1);
 $green_1_half: 		rgba( 28, 107,  77, 0.7);
-$green_2: 	rgba( 51, 178, 178, 1);
-$green_3: 	rgba(128, 168,  66, 1);
+$green_2: 	rgba(119, 166, 148, 1);
+$green_3: 	rgba(146, 213, 213, 1);
 $green_4: 	rgba( 50, 177, 176, 1);
 $gray_1: 	rgba( 78,  78,  78, 1);
 $gray_1_half: rgba( 78, 78, 78, .8);
@@ -21,9 +21,12 @@ $gray_3: 	rgba(153, 153, 153, 1);
 $gray_4: 	rgba( 51,  51,  51, 1);
 $gray_5: 	rgba(216, 216, 216, 1);
 $white: 	rgba(255, 255, 255, 1);
-$orange: 	rgba(215,  90,  36, 1);
-$yellow: 	rgba(218, 128,  25, 1);
-$aqua: 		rgba(  6, 147, 166, 1);
+$blue: 		rgba( 63, 169, 245, 1);
+$lemon: 	rgba(136, 194,  64, 1);
+$red: 		rgba(215,  90,  36, 1);
+$orange: 	rgba(255, 134,   0, 1);
+$yellow: 	rgba(253, 225,   0, 1);
+$aqua: 		rgba( 51, 178, 178, 1);
 /**
  * Mixins
  */
@@ -58,7 +61,7 @@ $merriweather: "Merriweather", sans-serif;
 /**
  * Cuerpo
  */
-body { padding: 80px 0 0 0; font-weight: normal !important; }
+body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; }
 /**
  * Menu Superior
  */
@@ -112,7 +115,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; }
 	height: 370px;
 }
 .jumboquote { 
-	background: $green_2; 
+	background: $aqua; 
 	color: $white; 
 	font-family: $merriweather;
 	margin: 60px 0 0 0;
@@ -129,7 +132,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; }
 }
 .jumboaction { margin: 1.5em 0 0 0; }
 .jumboaction a {
-	background: $orange;
+	background: $red;
 	color: $white;
 	margin: -.80em;
 	padding: .5em;
@@ -187,7 +190,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; }
 }
 .jumbosearch button {
 	text-align: center;
-	background: $orange;
+	background: $red;
 	color: $white;
 	border: 0;
 	font-family: $merriweather;
@@ -252,3 +255,126 @@ body { padding: 80px 0 0 0; font-weight: normal !important; }
 	font-family: $lato-sans !important;
 	padding: 0 !important;
 }
+/**
+ * ADS Footer
+ */
+.ads-footer {
+	padding: 3.5px 0;
+	background: $gray_3;
+	text-align: center;
+}
+.ads-footer ul, 
+.ads-footer li {
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+}
+.ads-footer li {
+	display: inline;
+	margin: 0 1%;
+}
+/**
+ * Content Rows
+ */
+.content.row {
+	min-height: 100%;
+}
+.move-down {
+	font-size: 1.5em;
+	text-align: center;
+}
+.move-down a {
+	color: $red;
+}
+.bigquote {
+	text-align: center;
+	font-size: 1.875em;
+	color: $aqua;
+	font-family: $merriweather;
+	font-style: italic;
+}
+/**
+ * Miembros
+ */
+.miembros {}
+.miembros .grupo {
+	text-align: right;
+	margin-bottom: 15px;
+}
+.miembros .grupo .col-md-3 {}
+.miembros .grupo .col-md-3 .miembro {
+	min-height: 300px;
+	padding: 1em;
+}
+.miembros .nombre {
+	font-family: $merriweather;
+	font-weight: bold;
+	font-size: 2em;
+	text-indent: 45%;
+}
+.miembros .cargo {
+	font-family: $lato-sans;
+	font-weight: normal;
+	font-size: 1.5em;
+}
+.miembros .email {
+	margin-top: 132px;
+}
+.miembros .email a { color: $aqua; }
+.miembros .m1  .miembro { background:  transparent url('assets/images/directivos/01-clemente.png') no-repeat; background-size: 100% 100%; }
+.miembros .m2  .miembro { background:  transparent url('assets/images/directivos/02-pedro.png') no-repeat; background-size: 100% 100%; }
+.miembros .m3  .miembro { background:  transparent url('assets/images/directivos/03-gladys.png') no-repeat; background-size: 100% 100%; }
+.miembros .m4  .miembro { background:  transparent url('assets/images/directivos/04-mayuly.png') no-repeat; background-size: 100% 100%; }
+.miembros .m5  .miembro { background:  transparent url('assets/images/directivos/05-eddy.png') no-repeat; background-size: 100% 100%; }
+.miembros .m6  .miembro { background:  transparent url('assets/images/directivos/06-jacque.png') no-repeat; background-size: 100% 100%; }
+.miembros .m7  .miembro { background:  transparent url('assets/images/directivos/07-soris.png') no-repeat; background-size: 100% 100%; }
+.miembros .m8  .miembro { background:  transparent url('assets/images/directivos/08-francisco.png') no-repeat; background-size: 100% 100%; }
+.miembros .m9  .miembro { background:  transparent url('assets/images/directivos/09-annet.png') no-repeat; background-size: 100% 100%; }
+.miembros .m10 .miembro  { background: transparent  url('assets/images/directivos/10-alexais.png') no-repeat; background-size: 100% 100%; }
+.miembros .m11 .miembro  { background: transparent  url('assets/images/directivos/11-jenny.png') no-repeat; background-size: 100% 100%; }
+.miembros .m12 .miembro  { background: transparent  url('assets/images/directivos/12-pilar.png') no-repeat; background-size: 100% 100%; }
+.miembros .miembro div { display: none; }
+.miembros .miembro {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+.miembros .miembro:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: $gray_5;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.miembros .miembro:hover, .miembros .miembro:focus, .miembros .miembro:active {}
+.miembros .miembro:hover:before, .miembros .miembro:focus:before, .miembros .miembro:active:before {
+	-webkit-transform: scaleY(1);
+	transform: scaleY(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.miembros .miembro:hover div,
+.miembros .miembro { display: block; }

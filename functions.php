@@ -146,6 +146,8 @@ if( !function_exists("theme_styles") ) {
         wp_enqueue_style( 'bootstrap' );
         wp_register_style( 'bootstrap-theme', get_template_directory_uri() . '/assets/bootstrap-3.3.2/css/bootstrap-theme.min.css', array(), '3.3.2', 'all' );
         wp_enqueue_style( 'bootstrap-theme' );
+        wp_register_style( 'fontawesome', get_template_directory_uri() . '/assets/font-awesome-4.3.0/css/font-awesome.min.css', array(), '4.3.0', 'all' );
+        wp_enqueue_style( 'fontawesome' );
         wp_register_style( 'wpcss', get_template_directory_uri() . '/style.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'wpcss' );
     }
