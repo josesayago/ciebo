@@ -238,4 +238,6 @@
 		</div>
 	</div>
 </div>
+<div class="clearfix">&nbsp;</div>
+<div class="clearfix">&nbsp;</div>
 <?php get_template_part('templates/footer'); ?>
