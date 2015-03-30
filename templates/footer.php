@@ -22,6 +22,11 @@
 				    scrollTop: jQuery("#inicio").offset().top
 				}, 2000);
 			});
+			jQuery('iframe').on('load', function() {
+				console.log( jQuery("iframe").contents().find("div[class='google-maps-link']") );
+			    //jQuery("iframe").contents().find("div.google-maps-link").remove();
+			      //.append(jQuery("<style type='text/css'>  .google-maps-link { display: none !important; } </style>"));
+			});
 		});
     </script>
 </body>
