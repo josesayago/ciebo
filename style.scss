@@ -110,9 +110,6 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 	border-color: $white;
 	@include radius-off;
 }
-@media (max-width: 500px) {
-	.navbar-brand { padding: 1% 0 0 36%; }
-}
 .navbar-toggle .icon-bar { background-color: $white !important; }
 .navbar-toggle:hover,
 .navbar-toggle:active,
@@ -133,6 +130,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 	text-align: center;
 }
 @media (max-width: 500px) {
+	.navbar-brand { padding: 1% 0 0 36%; }
 	.nohover { display: none; }
 	.navbar-collapse ul li a {
 		line-height: 1em;
@@ -162,6 +160,14 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 	.jumbosearch .text-right {
 		text-align: center !important;
 	}
+	.jumbotron { 
+		margin: -80px 0 0 0; 
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('assets/images/header-2.jpg');
+	    background-size:   cover;
+	    background-repeat: no-repeat;
+	    background-position: center center;
+		height: 500px;
+	}
 }
 .dropdown-menu { 
 	background: $green_1_half;
@@ -186,10 +192,12 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 /**
  * Jumbotron Cabecera
  */
-.jumbotron { 
-	margin: -80px 0 0 0; 
-	background: transparent url('assets/images/header-1.png');
-	height: 370px;
+@media (min-width: 501px) {
+	.jumbotron { 
+		margin: -80px 0 0 0; 
+		background: transparent url('assets/images/header-1.jpg');
+		height: 370px;
+	}
 }
 .jumboquote { 
 	background: $aqua; 

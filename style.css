@@ -91,9 +91,6 @@ body {
   -moz-border-radius: 0;
   -o-border-radius: 0; }
 
-@media (max-width: 500px) {
-  .navbar-brand {
-    padding: 1% 0 0 36%; } }
 .navbar-toggle .icon-bar {
   background-color: white !important; }
 
@@ -122,6 +119,9 @@ body {
   text-align: center; }
 
 @media (max-width: 500px) {
+  .navbar-brand {
+    padding: 1% 0 0 36%; }
+
   .nohover {
     display: none; }
 
@@ -169,7 +169,15 @@ body {
     text-align: center; }
 
   .jumbosearch .text-right {
-    text-align: center !important; } }
+    text-align: center !important; }
+
+  .jumbotron {
+    margin: -80px 0 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/images/header-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 500px; } }
 .dropdown-menu {
   background: rgba(28, 107, 77, 0.7);
   border: 0;
@@ -196,11 +204,11 @@ body {
 /**
  * Jumbotron Cabecera
  */
-.jumbotron {
-  margin: -80px 0 0 0;
-  background: transparent url("assets/images/header-1.png");
-  height: 370px; }
-
+@media (min-width: 501px) {
+  .jumbotron {
+    margin: -80px 0 0 0;
+    background: transparent url("assets/images/header-1.jpg");
+    height: 370px; } }
 .jumboquote {
   background: #33b2b2;
   color: white;
