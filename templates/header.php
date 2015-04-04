@@ -41,9 +41,16 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navegacion">
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Nosotros &nbsp;&nbsp;&nbsp;<span class="nohover">/</span></a></li>
-                    <li><a href="#">Certificación &nbsp;&nbsp;&nbsp;<span class="nohover">/</span></a></li>
-                    <li><a href="#">Caras Felices &nbsp;&nbsp;&nbsp;<span class="nohover">/</span></a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Nosotros <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a>
+                        <ul class="dropdown-menu">   
+                            <li><a href="">CIEBO</a></li>
+                            <li><a href="">Junta Directiva</a></li>
+                            <li><a href="">Afiliados</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Certificación <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
+                    <li><a href="#">Caras Felices <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
                     <li><a href="#">Contacto</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
@@ -65,7 +72,8 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-9 jumbosearch">
                     <div class="col-md-10 col-md-offset-2">
-                        <h2>Busca Inmuebles en la Zona</h2>
+                        <h2 class="desktop">Busca Inmuebles en la Zona</h2>
+                        <h2 class="mobile">Encuentra un inmueble en la zona</h2>
                         <div class="select-group">
                             <p>
                                 <label for="propiedad">Propiedad</label>
