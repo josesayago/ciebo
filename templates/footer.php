@@ -1,5 +1,5 @@
 	<?php wp_footer(); ?>
-	<div class="navbar-fixed-bottom">
+	<div class="navbar-fixed-bottom hidden-xs">
 		<div class="ads-footer">
 			<ul>
 				<li><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ads/01.png" /></li>
@@ -23,9 +23,8 @@
 				}, 2000);
 			});
 			jQuery('iframe').on('load', function() {
-				console.log( jQuery("iframe").contents().find("div[class='google-maps-link']") );
-			    //jQuery("iframe").contents().find("div.google-maps-link").remove();
-			      //.append(jQuery("<style type='text/css'>  .google-maps-link { display: none !important; } </style>"));
+			    jQuery("iframe").contents().find("div.google-maps-link").remove()
+			      .append(jQuery("<style type='text/css'>  .google-maps-link { display: none !important; } </style>"));
 			});
 		});
     </script>

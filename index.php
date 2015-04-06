@@ -73,8 +73,8 @@
 	</div>
 </div>
 <div class="content row miembros">
-	<div class="col-sm-3 col-md-12 grupo">
-		<div class="col-md-3 m1">
+	<div class="col-xs-12 col-md-12 grupo">
+		<div class="col-md-3 col-xs-6 m1">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Clemente Tenías</p>
@@ -87,7 +87,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m2">
+		<div class="col-md-3 col-xs-6 m2">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Pedro Pérez Francis</p>
@@ -100,7 +100,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m3">
+		<div class="col-md-3 col-xs-6 m3">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Gladys Villalba</p>
@@ -113,7 +113,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m4">
+		<div class="col-md-3 col-xs-6 m4">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Mayuly Zerpa</p>
@@ -128,8 +128,8 @@
 		</div>
 	</div>
 	<div class="clearfix"></div>
-	<div class="col-sm-3 col-md-12 grupo">
-		<div class="col-md-3 m5">
+	<div class="col-xs-12 col-md-12 grupo">
+		<div class="col-md-3 col-xs-6 m5">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Eddy Rojas</p>
@@ -142,7 +142,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m6">
+		<div class="col-md-3 col-xs-6 m6">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Jacqueline Rodríguez</p>
@@ -155,7 +155,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m7">
+		<div class="col-md-3 col-xs-6 m7">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Soris Espinoza</p>
@@ -168,7 +168,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m8">
+		<div class="col-md-3 col-xs-6 m8">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Franco Piñango</p>
@@ -183,8 +183,8 @@
 		</div>
 	</div>
 	<div class="clearfix"></div>
-	<div class="col-sm-3 col-md-12 grupo">
-		<div class="col-md-3 m9">
+	<div class="col-xs-12 col-md-12 grupo">
+		<div class="col-md-3 col-xs-6 m9">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Annet León</p>
@@ -197,7 +197,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m10">
+		<div class="col-md-3 col-xs-6 m10">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Alexais Montenegro</p>
@@ -210,7 +210,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m11">
+		<div class="col-md-3 col-xs-6 m11">
 			<div class="miembro">
 				<div class="nombre">
 					<p>Jenny Vallenilla</p>
@@ -223,7 +223,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3 m12">
+		<div class="col-md-3 col-xs-6 m12">
 			<div class="miembro">
 				<div class="nombre">
 					<p>María Pilar Mina</p>
@@ -253,7 +253,7 @@
 	</div>
 </div>
 <div class="content row pie">
-	<div class="col-md-6 pieizq">
+	<div class="col-md-6 pieizq hidden-xs">
 		<div class="col-md-6">
 			<h3>Conócenos</h3>
 			<ul>

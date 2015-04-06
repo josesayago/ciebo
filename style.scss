@@ -129,7 +129,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 .navbar-collapse ul li {
 	text-align: center;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
 	.navbar-brand { padding: 1% 0 0 36%; }
 	.nohover { display: none; }
 	.navbar-collapse ul li a {
@@ -168,6 +168,48 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 	    background-position: center center;
 		height: 500px;
 	}
+	.jumbosearch h2 {
+		font-family: $merriweather;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 1.3em;
+		line-height: 18pt;
+		margin-right: 0;
+		margin-bottom: 1.160em;
+		color: $white;
+	}
+	.jumbosearch p,
+	.jumbosearch label {
+		font-family: $lato-sans;
+		font-size: .9em;
+		line-height: 0em;
+		font-weight: 300;
+		letter-spacing: .07em;
+	}
+	.jumbosearch label {
+		font-family: $lato-sans;
+		font-size: .9em;
+		line-height: 0em;
+		font-weight: 300;
+		letter-spacing: .07em;
+		color: $white;
+	}
+	.jumbosearch select {
+		width: 100%;
+		-webkit-appearance: button;
+		-webkit-border-radius: 0px;
+		-webkit-padding-end: 20px;
+		-webkit-padding-start: 2px;
+		-webkit-user-select: none;
+		background-image: url('assets/images/select-triangle.png');
+		background-position: 97% center;
+		background-repeat: no-repeat;
+		border: 1px solid #AAA;
+		color: red;
+		white-space: nowrap;
+		height: 30px;
+	}
+	.jumbosearch select:focus { outline: none; }
 }
 .dropdown-menu { 
 	background: $green_1_half;
@@ -192,7 +234,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 /**
  * Jumbotron Cabecera
  */
-@media (min-width: 501px) {
+@media (min-width: 801px) {
 	.jumbotron { 
 		margin: -80px 0 0 0; 
 		background: transparent url('assets/images/header-1.jpg');
@@ -230,63 +272,65 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 .jumboaction a:hover {
 	text-decoration: none;
 }
-.jumbosearch {
-	background: $gray_1_half;
-	color: $white;
-	text-align: right;
-	margin-top: -23.16%;
-	margin-left: 79.6%;
-}
-.jumbosearch h2 {
-	font-family: $merriweather;
-	font-weight: 300;
-	font-style: italic;
-	font-size: 1.515em;
-	line-height: 18pt;
-	margin-right: 0;
-	margin-bottom: 1.160em;
-}
-.jumbosearch p,
-.jumbosearch label {
-	font-family: $lato-sans;
-	font-size: .9em;
-	line-height: 0em;
-	font-weight: 300;
-	letter-spacing: .07em;
-}
-.jumbosearch select {
-	width: 100%;
-	-webkit-appearance: button;
-	-webkit-border-radius: 0px;
-	-webkit-padding-end: 20px;
-	-webkit-padding-start: 2px;
-	-webkit-user-select: none;
-	background-image: url('assets/images/select-triangle.png');
-	background-position: 97% center;
-	background-repeat: no-repeat;
-	border: 1px solid #AAA;
-	color: #555;
-	white-space: nowrap;
-	height: 18px;
-}
-.jumbosearch select:focus {
-	outline: none;
-	line-height: .8em;
-}
-.jumbosearch button {
-	text-align: center;
-	background: $red;
-	color: $white;
-	border: 0;
-	font-family: $merriweather;
-	font-weight: bold;
-	font-style: italic;
-	font-size: 1.375em;
-	padding: .7em;
-	@include radius-off;
-}
-.jumbosearch .select-group {
-	margin: .7em 0 0 0;
+@media (min-width: 801px) {
+	.jumbosearch {
+		background: $gray_1_half;
+		color: $white;
+		text-align: right;
+		margin-top: -23.16%;
+		margin-left: 79.6%;
+	}
+	.jumbosearch h2 {
+		font-family: $merriweather;
+		font-weight: 300;
+		font-style: italic;
+		font-size: 1.515em;
+		line-height: 18pt;
+		margin-right: 0;
+		margin-bottom: 1.160em;
+	}
+	.jumbosearch p,
+	.jumbosearch label {
+		font-family: $lato-sans;
+		font-size: .9em;
+		line-height: 0em;
+		font-weight: 300;
+		letter-spacing: .07em;
+	}
+	.jumbosearch select {
+		width: 100%;
+		-webkit-appearance: button;
+		-webkit-border-radius: 0px;
+		-webkit-padding-end: 20px;
+		-webkit-padding-start: 2px;
+		-webkit-user-select: none;
+		background-image: url('assets/images/select-triangle.png');
+		background-position: 97% center;
+		background-repeat: no-repeat;
+		border: 1px solid #AAA;
+		color: #555;
+		white-space: nowrap;
+		height: 18px;
+	}
+	.jumbosearch select:focus {
+		outline: none;
+		line-height: .8em;
+	}
+	.jumbosearch button {
+		text-align: center;
+		background: $red;
+		color: $white;
+		border: 0;
+		font-family: $merriweather;
+		font-weight: bold;
+		font-style: italic;
+		font-size: 1.375em;
+		padding: .7em;
+		@include radius-off;
+	}
+	.jumbosearch .select-group {
+		margin: .7em 0 0 0;
+	}
 }
 .mobile { display: none; }
 /**
@@ -382,88 +426,120 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 /**
  * Miembros
  */
-.miembros {}
-.miembros .grupo {
-	text-align: right;
-	margin-bottom: 15px;
+@media (min-width: 801px) {
+	.miembros {}
+	.miembros .grupo {
+		text-align: right;
+		margin-bottom: 15px;
+	}
+	.miembros .grupo .col-md-3 {}
+	.miembros .grupo .col-md-3 .miembro {
+		min-height: 300px;
+		padding: 1em;
+	}
+	.miembros .nombre {
+		font-family: $merriweather;
+		font-weight: bold;
+		font-size: 2em;
+		text-indent: 45%;
+	}
+	.miembros .cargo {
+		font-family: $lato-sans;
+		font-weight: normal;
+		font-size: 1.5em;
+	}
+	.miembros .email {
+		margin-top: 132px;
+	}
+	.miembros .email a { color: $aqua; }
+	.miembros .m1  .miembro { background:  transparent url('assets/images/directivos/01-clemente.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m2  .miembro { background:  transparent url('assets/images/directivos/02-pedro.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m3  .miembro { background:  transparent url('assets/images/directivos/03-gladys.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m4  .miembro { background:  transparent url('assets/images/directivos/04-mayuly.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m5  .miembro { background:  transparent url('assets/images/directivos/05-eddy.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m6  .miembro { background:  transparent url('assets/images/directivos/06-jacque.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m7  .miembro { background:  transparent url('assets/images/directivos/07-soris.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m8  .miembro { background:  transparent url('assets/images/directivos/08-francisco.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m9  .miembro { background:  transparent url('assets/images/directivos/09-annet.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m10 .miembro  { background: transparent  url('assets/images/directivos/10-alexais.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m11 .miembro  { background: transparent  url('assets/images/directivos/11-jenny.png') no-repeat; background-size: 100% 100%; }
+	.miembros .m12 .miembro  { background: transparent  url('assets/images/directivos/12-pilar.png') no-repeat; background-size: 100% 100%; }
+	.miembros .miembro div { display: none; }
+	.miembros .miembro {
+		display: inline-block;
+		vertical-align: middle;
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-osx-font-smoothing: grayscale;
+		position: relative;
+		-webkit-transition-property: color;
+		transition-property: color;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+	}
+	.miembros .miembro:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: $gray_5;
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		-webkit-transform-origin: 50% 100%;
+		transform-origin: 50% 100%;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+	.miembros .miembro:hover, .miembros .miembro:focus, .miembros .miembro:active {}
+	.miembros .miembro:hover:before, .miembros .miembro:focus:before, .miembros .miembro:active:before {
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+		-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+		transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	}
+	.miembros .miembro:hover div,
+	.miembros .miembro { display: block; }
 }
-.miembros .grupo .col-md-3 {}
-.miembros .grupo .col-md-3 .miembro {
-	min-height: 300px;
-	padding: 1em;
+@media (max-width: 800px) {
+	.bigquote { 
+		font-size: 1.2em; 
+		line-height: 1.5em;
+	}
+	.miembros .col-xs-6 {
+		text-align: right;
+		margin-bottom: 15px;
+	}
+	.miembros .miembro {
+		background: $gray_5;
+		min-height: 115px;
+		padding: .5em;
+	}
+	.miembros .nombre {
+		font-family: $merriweather;
+		font-weight: bold;
+		font-size: .9em;
+		text-indent: 5%;
+	}
+	.miembros .cargo {
+		font-family: $lato-sans;
+		font-weight: normal;
+		font-size: .8em;
+	}
+	.miembros .email {
+		margin-top: 40px;
+	}
+	.miembros .email a { color: $aqua; }
 }
-.miembros .nombre {
-	font-family: $merriweather;
-	font-weight: bold;
-	font-size: 2em;
-	text-indent: 45%;
-}
-.miembros .cargo {
-	font-family: $lato-sans;
-	font-weight: normal;
-	font-size: 1.5em;
-}
-.miembros .email {
-	margin-top: 132px;
-}
-.miembros .email a { color: $aqua; }
-.miembros .m1  .miembro { background:  transparent url('assets/images/directivos/01-clemente.png') no-repeat; background-size: 100% 100%; }
-.miembros .m2  .miembro { background:  transparent url('assets/images/directivos/02-pedro.png') no-repeat; background-size: 100% 100%; }
-.miembros .m3  .miembro { background:  transparent url('assets/images/directivos/03-gladys.png') no-repeat; background-size: 100% 100%; }
-.miembros .m4  .miembro { background:  transparent url('assets/images/directivos/04-mayuly.png') no-repeat; background-size: 100% 100%; }
-.miembros .m5  .miembro { background:  transparent url('assets/images/directivos/05-eddy.png') no-repeat; background-size: 100% 100%; }
-.miembros .m6  .miembro { background:  transparent url('assets/images/directivos/06-jacque.png') no-repeat; background-size: 100% 100%; }
-.miembros .m7  .miembro { background:  transparent url('assets/images/directivos/07-soris.png') no-repeat; background-size: 100% 100%; }
-.miembros .m8  .miembro { background:  transparent url('assets/images/directivos/08-francisco.png') no-repeat; background-size: 100% 100%; }
-.miembros .m9  .miembro { background:  transparent url('assets/images/directivos/09-annet.png') no-repeat; background-size: 100% 100%; }
-.miembros .m10 .miembro  { background: transparent  url('assets/images/directivos/10-alexais.png') no-repeat; background-size: 100% 100%; }
-.miembros .m11 .miembro  { background: transparent  url('assets/images/directivos/11-jenny.png') no-repeat; background-size: 100% 100%; }
-.miembros .m12 .miembro  { background: transparent  url('assets/images/directivos/12-pilar.png') no-repeat; background-size: 100% 100%; }
-.miembros .miembro div { display: none; }
-.miembros .miembro {
-	display: inline-block;
-	vertical-align: middle;
-	-webkit-transform: translateZ(0);
-	transform: translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	-moz-osx-font-smoothing: grayscale;
-	position: relative;
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-.miembros .miembro:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: $gray_5;
-	-webkit-transform: scaleY(0);
-	transform: scaleY(0);
-	-webkit-transform-origin: 50% 100%;
-	transform-origin: 50% 100%;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-.miembros .miembro:hover, .miembros .miembro:focus, .miembros .miembro:active {}
-.miembros .miembro:hover:before, .miembros .miembro:focus:before, .miembros .miembro:active:before {
-	-webkit-transform: scaleY(1);
-	transform: scaleY(1);
-	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-}
-.miembros .miembro:hover div,
-.miembros .miembro { display: block; }
 /**
  * Caras Felices Home
  */

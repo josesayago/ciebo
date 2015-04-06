@@ -118,7 +118,7 @@ body {
 .navbar-collapse ul li {
   text-align: center; }
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .navbar-brand {
     padding: 1% 0 0 36%; }
 
@@ -177,7 +177,51 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    height: 500px; } }
+    height: 500px; }
+
+  .jumbosearch h2 {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.3em;
+    line-height: 18pt;
+    margin-right: 0;
+    margin-bottom: 1.160em;
+    color: white; }
+
+  .jumbosearch p,
+  .jumbosearch label {
+    font-family: "Lato", sans-serif;
+    font-size: .9em;
+    line-height: 0em;
+    font-weight: 300;
+    letter-spacing: .07em; }
+
+  .jumbosearch label {
+    font-family: "Lato", sans-serif;
+    font-size: .9em;
+    line-height: 0em;
+    font-weight: 300;
+    letter-spacing: .07em;
+    color: white; }
+
+  .jumbosearch select {
+    width: 100%;
+    -webkit-appearance: button;
+    -webkit-border-radius: 0px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url("assets/images/select-triangle.png");
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: red;
+    white-space: nowrap;
+    height: 30px; }
+
+  .jumbosearch select:focus {
+    outline: none; } }
 .dropdown-menu {
   background: rgba(28, 107, 77, 0.7);
   border: 0;
@@ -204,7 +248,7 @@ body {
 /**
  * Jumbotron Cabecera
  */
-@media (min-width: 501px) {
+@media (min-width: 801px) {
   .jumbotron {
     margin: -80px 0 0 0;
     background: transparent url("assets/images/header-1.jpg");
@@ -242,67 +286,67 @@ body {
 .jumboaction a:hover {
   text-decoration: none; }
 
-.jumbosearch {
-  background: rgba(78, 78, 78, 0.8);
-  color: white;
-  text-align: right;
-  margin-top: -23.16%;
-  margin-left: 79.6%; }
+@media (min-width: 801px) {
+  .jumbosearch {
+    background: rgba(78, 78, 78, 0.8);
+    color: white;
+    text-align: right;
+    margin-top: -23.16%;
+    margin-left: 79.6%; }
 
-.jumbosearch h2 {
-  font-family: "Merriweather", sans-serif;
-  font-weight: 300;
-  font-style: italic;
-  font-size: 1.515em;
-  line-height: 18pt;
-  margin-right: 0;
-  margin-bottom: 1.160em; }
+  .jumbosearch h2 {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.515em;
+    line-height: 18pt;
+    margin-right: 0;
+    margin-bottom: 1.160em; }
 
-.jumbosearch p,
-.jumbosearch label {
-  font-family: "Lato", sans-serif;
-  font-size: .9em;
-  line-height: 0em;
-  font-weight: 300;
-  letter-spacing: .07em; }
+  .jumbosearch p,
+  .jumbosearch label {
+    font-family: "Lato", sans-serif;
+    font-size: .9em;
+    line-height: 0em;
+    font-weight: 300;
+    letter-spacing: .07em; }
 
-.jumbosearch select {
-  width: 100%;
-  -webkit-appearance: button;
-  -webkit-border-radius: 0px;
-  -webkit-padding-end: 20px;
-  -webkit-padding-start: 2px;
-  -webkit-user-select: none;
-  background-image: url("assets/images/select-triangle.png");
-  background-position: 97% center;
-  background-repeat: no-repeat;
-  border: 1px solid #AAA;
-  color: #555;
-  white-space: nowrap;
-  height: 18px; }
+  .jumbosearch select {
+    width: 100%;
+    -webkit-appearance: button;
+    -webkit-border-radius: 0px;
+    -webkit-padding-end: 20px;
+    -webkit-padding-start: 2px;
+    -webkit-user-select: none;
+    background-image: url("assets/images/select-triangle.png");
+    background-position: 97% center;
+    background-repeat: no-repeat;
+    border: 1px solid #AAA;
+    color: #555;
+    white-space: nowrap;
+    height: 18px; }
 
-.jumbosearch select:focus {
-  outline: none;
-  line-height: .8em; }
+  .jumbosearch select:focus {
+    outline: none;
+    line-height: .8em; }
 
-.jumbosearch button {
-  text-align: center;
-  background: #d75a24;
-  color: white;
-  border: 0;
-  font-family: "Merriweather", sans-serif;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.375em;
-  padding: .7em;
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  -o-border-radius: 0; }
+  .jumbosearch button {
+    text-align: center;
+    background: #d75a24;
+    color: white;
+    border: 0;
+    font-family: "Merriweather", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.375em;
+    padding: .7em;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0; }
 
-.jumbosearch .select-group {
-  margin: .7em 0 0 0; }
-
+  .jumbosearch .select-group {
+    margin: .7em 0 0 0; } }
 .mobile {
   display: none; }
 
@@ -399,127 +443,157 @@ body {
 /**
  * Miembros
  */
-.miembros .grupo {
-  text-align: right;
-  margin-bottom: 15px; }
+@media (min-width: 801px) {
+  .miembros .grupo {
+    text-align: right;
+    margin-bottom: 15px; }
 
-.miembros .grupo .col-md-3 .miembro {
-  min-height: 300px;
-  padding: 1em; }
+  .miembros .grupo .col-md-3 .miembro {
+    min-height: 300px;
+    padding: 1em; }
 
-.miembros .nombre {
-  font-family: "Merriweather", sans-serif;
-  font-weight: bold;
-  font-size: 2em;
-  text-indent: 45%; }
+  .miembros .nombre {
+    font-family: "Merriweather", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    text-indent: 45%; }
 
-.miembros .cargo {
-  font-family: "Lato", sans-serif;
-  font-weight: normal;
-  font-size: 1.5em; }
+  .miembros .cargo {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    font-size: 1.5em; }
 
-.miembros .email {
-  margin-top: 132px; }
+  .miembros .email {
+    margin-top: 132px; }
 
-.miembros .email a {
-  color: #33b2b2; }
+  .miembros .email a {
+    color: #33b2b2; }
 
-.miembros .m1 .miembro {
-  background: transparent url("assets/images/directivos/01-clemente.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m1 .miembro {
+    background: transparent url("assets/images/directivos/01-clemente.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m2 .miembro {
-  background: transparent url("assets/images/directivos/02-pedro.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m2 .miembro {
+    background: transparent url("assets/images/directivos/02-pedro.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m3 .miembro {
-  background: transparent url("assets/images/directivos/03-gladys.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m3 .miembro {
+    background: transparent url("assets/images/directivos/03-gladys.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m4 .miembro {
-  background: transparent url("assets/images/directivos/04-mayuly.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m4 .miembro {
+    background: transparent url("assets/images/directivos/04-mayuly.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m5 .miembro {
-  background: transparent url("assets/images/directivos/05-eddy.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m5 .miembro {
+    background: transparent url("assets/images/directivos/05-eddy.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m6 .miembro {
-  background: transparent url("assets/images/directivos/06-jacque.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m6 .miembro {
+    background: transparent url("assets/images/directivos/06-jacque.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m7 .miembro {
-  background: transparent url("assets/images/directivos/07-soris.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m7 .miembro {
+    background: transparent url("assets/images/directivos/07-soris.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m8 .miembro {
-  background: transparent url("assets/images/directivos/08-francisco.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m8 .miembro {
+    background: transparent url("assets/images/directivos/08-francisco.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m9 .miembro {
-  background: transparent url("assets/images/directivos/09-annet.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m9 .miembro {
+    background: transparent url("assets/images/directivos/09-annet.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m10 .miembro {
-  background: transparent url("assets/images/directivos/10-alexais.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m10 .miembro {
+    background: transparent url("assets/images/directivos/10-alexais.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m11 .miembro {
-  background: transparent url("assets/images/directivos/11-jenny.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m11 .miembro {
+    background: transparent url("assets/images/directivos/11-jenny.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .m12 .miembro {
-  background: transparent url("assets/images/directivos/12-pilar.png") no-repeat;
-  background-size: 100% 100%; }
+  .miembros .m12 .miembro {
+    background: transparent url("assets/images/directivos/12-pilar.png") no-repeat;
+    background-size: 100% 100%; }
 
-.miembros .miembro div {
-  display: none; }
+  .miembros .miembro div {
+    display: none; }
 
-.miembros .miembro {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px transparent;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s; }
+  .miembros .miembro {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
 
-.miembros .miembro:before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #d8d8d8;
-  -webkit-transform: scaleY(0);
-  transform: scaleY(0);
-  -webkit-transform-origin: 50% 100%;
-  transform-origin: 50% 100%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out; }
+  .miembros .miembro:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #d8d8d8;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
 
-.miembros .miembro:hover:before, .miembros .miembro:focus:before, .miembros .miembro:active:before {
-  -webkit-transform: scaleY(1);
-  transform: scaleY(1);
-  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
+  .miembros .miembro:hover:before, .miembros .miembro:focus:before, .miembros .miembro:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66); }
 
-.miembros .miembro:hover div,
-.miembros .miembro {
-  display: block; }
+  .miembros .miembro:hover div,
+  .miembros .miembro {
+    display: block; } }
+@media (max-width: 800px) {
+  .bigquote {
+    font-size: 1.2em;
+    line-height: 1.5em; }
 
+  .miembros .col-xs-6 {
+    text-align: right;
+    margin-bottom: 15px; }
+
+  .miembros .miembro {
+    background: #d8d8d8;
+    min-height: 115px;
+    padding: .5em; }
+
+  .miembros .nombre {
+    font-family: "Merriweather", sans-serif;
+    font-weight: bold;
+    font-size: .9em;
+    text-indent: 5%; }
+
+  .miembros .cargo {
+    font-family: "Lato", sans-serif;
+    font-weight: normal;
+    font-size: .8em; }
+
+  .miembros .email {
+    margin-top: 40px; }
+
+  .miembros .email a {
+    color: #33b2b2; } }
 /**
  * Caras Felices Home
  */
