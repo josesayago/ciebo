@@ -49,9 +49,14 @@
                             <li><a href="">Afiliados</a></li>
                         </ul>
                     </li>
+                    <li class="visible-xs"><a href="#">Afiliación</a></li>
                     <li><a href="#">Certificación <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
                     <li><a href="#">Caras Felices <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li class="visible-xs"><a href="#">Noticias</a></li>
+                    <li class="visible-xs"><a href="#">Eventos</a></li>
+                    <li class="visible-xs"><a href="#">Blog Inmobiliario</a></li>
+                    <li class="visible-xs"><a href="#">Leyes y Decretos</a></li>
+                    <li class="hidden-xs"><a href="#">Contacto</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -72,8 +77,8 @@
             <div class="row">
                 <div class="col-md-3 col-md-offset-9 jumbosearch">
                     <div class="col-md-10 col-md-offset-2">
-                        <h2 class="desktop">Busca Inmuebles en la Zona</h2>
-                        <h2 class="mobile">Encuentra un inmueble en la zona</h2>
+                        <h2 class="hidden-xs">Busca Inmuebles en la Zona</h2>
+                        <h2 class="visible-xs">Encuentra un inmueble en la zona</h2>
                         <div class="select-group">
                             <p>
                                 <label for="propiedad">Propiedad</label>

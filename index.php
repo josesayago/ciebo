@@ -1,6 +1,6 @@
 <?php get_template_part('templates/header'); ?>
 <div class="content row">
-	<div class="col-md-12">
+	<div class="col-md-12 hidden-xs">
 		<div class="col-md-4">
 			<?php
 				if( function_exists( 'single_latest_posts' ) ) {

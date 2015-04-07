@@ -161,13 +161,6 @@ body {
     margin-left: 0 !important;
     background: transparent !important; }
 
-  .desktop {
-    display: none; }
-
-  .mobile {
-    display: block !important;
-    text-align: center; }
-
   .jumbosearch .text-right {
     text-align: center !important; }
 
@@ -221,7 +214,22 @@ body {
     height: 30px; }
 
   .jumbosearch select:focus {
-    outline: none; } }
+    outline: none; }
+
+  .jumbosearch button {
+    text-align: center;
+    background: #d75a24;
+    color: white;
+    border: 0;
+    font-family: "Merriweather", sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.375em;
+    padding: .7em;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -o-border-radius: 0; } }
 .dropdown-menu {
   background: rgba(28, 107, 77, 0.7);
   border: 0;
@@ -567,7 +575,8 @@ body {
 @media (max-width: 800px) {
   .bigquote {
     font-size: 1.2em;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    padding: 0 .5em; }
 
   .miembros .col-xs-6 {
     text-align: right;
@@ -575,25 +584,35 @@ body {
 
   .miembros .miembro {
     background: #d8d8d8;
-    min-height: 115px;
-    padding: .5em; }
+    height: 125px;
+    padding: .3em; }
 
   .miembros .nombre {
     font-family: "Merriweather", sans-serif;
     font-weight: bold;
     font-size: .9em;
-    text-indent: 5%; }
+    text-indent: 2%; }
 
   .miembros .cargo {
     font-family: "Lato", sans-serif;
     font-weight: normal;
-    font-size: .8em; }
+    font-size: .7em; }
 
   .miembros .email {
-    margin-top: 40px; }
+    margin-top: 60px;
+    font-size: .7em; }
 
   .miembros .email a {
-    color: #33b2b2; } }
+    color: #33b2b2; }
+
+  .pieder {
+    text-align: center !important; }
+
+  .pieder .telf {
+    display: inline-block; }
+
+  .pieder .telf:first-child {
+    margin-right: 1em; } }
 /**
  * Caras Felices Home
  */
