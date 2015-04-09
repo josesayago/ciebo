@@ -22,7 +22,7 @@
     <script>document.createElement( "picture" );</script>
 </head>
 <body <?php body_class(); ?>>
-    <div class="jumbotron">
+    <?php if( empty( $pagename ) ) { ?><div class="jumbotron"><?php } ?>
         <div class="container">
             <!-- \Menu -->
             <nav class="navbar navbar-default navbar-fixed-top">
@@ -37,16 +37,15 @@
                   </button>
                   <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-CIEBO.png" /></a>
                 </div>
-
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navegacion">
                   <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">Nosotros <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a>
                         <ul class="dropdown-menu">   
-                            <li><a href="">CIEBO</a></li>
-                            <li><a href="">Junta Directiva</a></li>
-                            <li><a href="">Afiliados</a></li>
+                            <li><a href="<?php echo get_page_link( get_page_by_title('ciebo')->ID ); ?>">CIEBO</a></li>
+                            <li><a href="<?php echo get_page_link( get_page_by_title('junta directiva')->ID ); ?>">Junta Directiva</a></li>
+                            <li><a href="<?php echo get_page_link( get_page_by_title('afiliados')->ID ); ?>">Afiliados</a></li>
                         </ul>
                     </li>
                     <li class="visible-xs"><a href="#">Afiliación</a></li>
@@ -62,6 +61,7 @@
               </div><!-- /.container-fluid -->
             </nav>
             <!-- /Menu -->
+            <?php if( empty( $pagename ) ) { ?>
             <div class="row">
                 <div class="col-md-3 jumboquote">
                     <div class="jumbotext">
@@ -115,5 +115,6 @@
                     </div> 
                 </div>
             </div>
+            <?php } ?>
         </div>
-    </div>
+    <?php if( empty( $pagename ) ) { ?></div><?php } ?>

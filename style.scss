@@ -21,6 +21,7 @@ $gray_3: 	rgba(153, 153, 153, 1);
 $gray_4: 	rgba( 51,  51,  51, 1);
 $gray_5: 	rgba(216, 216, 216, 1);
 $gray_5_half: rgba(216, 216, 216, 0.5);
+$gray_6:	rgba(179, 179, 179, 1);
 $white: 	rgba(255, 255, 255, 1);
 $blue: 		rgba( 63, 169, 245, 1);
 $lemon: 	rgba(136, 194,  64, 1);
@@ -124,10 +125,8 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 .navbar-default .navbar-nav > .open > a:hover {
 	background: transparent;
 	color: $green_4 !important;
+	box-shadow: none;
 	@include color-transition;
-}
-.navbar-collapse ul li {
-	text-align: center;
 }
 @media (max-width: 800px) {
 	.navbar-brand { padding: 1% 0 0 36%; }
@@ -142,6 +141,9 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 	.navbar-collapse .nav .open >a, .nav .open > a:focus, .nav .open > a:hover {
 		border-color: none;
 		border-bottom: 1px solid $gray_5_half;
+	}
+	.navbar-collapse ul li {
+		text-align: center;
 	}
 	.navbar-collapse li a:last-child { margin-right: 0; }
 	.navbar-collapse .dropdown-menu li a { padding-left: 11% !important; outline: none; }
@@ -170,11 +172,13 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 		font-family: $merriweather;
 		font-weight: 300;
 		font-style: italic;
-		font-size: 1.3em;
+		font-size: 1.4em;
 		line-height: 18pt;
 		margin-right: 0;
 		margin-bottom: 1.160em;
+		padding-top: 1em;
 		color: $white;
+		text-align: center;
 	}
 	.jumbosearch p,
 	.jumbosearch label {
@@ -183,6 +187,7 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 		line-height: 0em;
 		font-weight: 300;
 		letter-spacing: .07em;
+		text-align: right;
 	}
 	.jumbosearch label {
 		font-family: $lato-sans;
@@ -616,5 +621,250 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 	font-weight: bold; 
 	font-size: 1.188em;
 }
+.pie iframe { margin: 0 auto; }
 .pie .socialicons a { margin: 0 0 0 .1em; color: $white; }
 .pie .socialicons a:first-child { margin: 0 !important; }
+/**
+ * Nosotros
+ */
+.page-template-nosotros .col-md-3 { margin-left: -30px !important; }
+.page-banner {
+	background: $aqua;
+	color: $white;
+	padding: 1em;
+	width: 100%;
+	font-size: 1.875em;
+	font-weight: bold;
+}
+.local-nav .nav a {
+	border: 1px solid $gray_5;
+	width: 100%;
+	font-family: $lato-sans;
+	font-size: 1.188em;
+	padding: 1em 0 1em 15px;
+	color: $gray_1;
+}
+.local-nav .nav .active a {
+	color: $aqua;
+}
+.local-nav .nav .two a { 
+	border-top: 0;
+	border-bottom: 0;
+}
+.breadcrumb { 
+	background: transparent; 
+	color: $gray_3; 
+	font-size: 0.888em;
+}
+.breadcrumb a { color: $aqua; }
+.page-template-nosotros .inner-content {
+	margin: 1.2em 0 0 2em;
+	color: $gray_2;
+	font-family: $lato-sans;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+.page-template-nosotros .inner-content h3 {
+	font-size: 1.625em;
+	font-family: $merriweather;
+	font-weight: bold;
+	color: $aqua;
+}
+.page-template-nosotros .inner-content .col-md-12,
+.page-template-nosotros .inner-content .col-xs-12 {
+	padding: 0;
+	margin-bottom: 2em;
+}
+.page-template-nosotros .inner-content .col-md-12 div,
+.page-template-nosotros .inner-content .col-xs-12 div {
+	padding: 0;
+}
+.page-template-nosotros .pic-m1  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/01-clemente.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m2  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/02-pedro.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m3  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/03-gladys.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m4  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/04-mayuly.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m5  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/05-eddy.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m6  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/06-jacque.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m7  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/07-soris.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m8  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/08-francisco.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m9  { width: 100px; height: 100px; background:  transparent url('assets/images/directivos/09-annet.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m10  { width: 100px; height: 100px; background: transparent  url('assets/images/directivos/10-alexais.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m11  { width: 100px; height: 100px; background: transparent  url('assets/images/directivos/11-jenny.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .pic-m12  { width: 100px; height: 100px; background: transparent  url('assets/images/directivos/12-pilar.png') no-repeat; background-size: 100% 100%; }
+.page-template-nosotros .miembro .col-md-7,
+.page-template-nosotros .miembro .col-xs-7 {
+	background: $gray_5;
+	height: 100px;
+	text-align: right;
+}
+.page-template-nosotros .miembro .nombre,
+.page-template-nosotros .miembro .cargo,
+.page-template-nosotros .miembro .email {
+	padding: 0 .5em !important;
+	text-align: right;
+}
+.page-template-nosotros .miembro .email {
+	margin-top: 2em;
+	color: $aqua;
+}
+/**
+ * Afiliados
+ */
+.afiliados h2 { 
+	color: $aqua; 
+	vertical-align: top;
+	font-family: $merriweather;
+	margin-top: 0;
+}
+@media (max-width: 800px) {
+	.afiliados .col-xs-12 {
+		text-align: center;
+	}
+	.page-banner,
+	.local-nav .nav {
+		margin: 0 auto !important;
+		width: 100% !important;
+		text-align: center !important;
+	}
+	.breadcrumb { text-align: center; }
+}
+.afiliados .input-afiliado {
+	margin-top: 0;
+	padding: 0.5em;
+	font-size: 0.75em;
+	font-family: $lato-sans;
+	font-style: italic;
+	background: $gray_5;
+	outline: none;
+	border: 0;
+	width: 50%;
+}
+.afiliados .button-afiliado {
+	background: transparent;
+	border: 0;
+}
+.afiliados .button-afiliado i {
+	color: $aqua;
+	@include color-transition;
+}
+.afiliados .button-afiliado:hover i {
+	color: $gray_2;
+	@include color-transition;
+}
+.opciones-afiliados {
+	font-size: 1.376em;
+	font-family: $merriweather;
+	font-style: italic;
+	font-weight: bold;
+	color: $gray_6;
+}
+.opciones-afiliados p { display: inline; }
+@media (max-width: 800px) {
+	.opciones-afiliados p {
+		display: block;
+		text-align: center;
+	}
+}
+.opciones-afiliados button {
+	border: 0;
+	background: $gray_6;
+	color: $white;
+	padding: .5em 1em;
+	letter-spacing: 0.075em;
+}
+.opciones-afiliados p:nth-of-type(1) { margin-right: 1em; }
+.opciones-afiliados p:nth-of-type(3) { margin-left: 1em; }
+.opciones-afiliados button:active,
+.opciones-afiliados button:focus { 
+	background: $aqua; 
+	outline: none;
+}
+.help-afiliados {
+	color: $gray_6;
+	font-family: $merriweather;
+	font-style: italic;
+}
+.afiliados-hidden { display: none; }
+.filtro-afiliados {
+	list-style: none;
+}
+.filtro-afiliados li {
+	display: inline;
+}
+.filtro-afiliados li a {
+	display: inline-block;
+	color: $red;
+	margin: 0 1em;
+	font-family: $lato-sans;
+	font-size: 1.375em;
+	@include color-transition;
+}
+.filtro-afiliados li a:hover,
+.filtro-afiliados li a:active {
+	color: $aqua;
+	@include color-transition;
+	text-decoration: none;
+}
+div.abc, div.def, div.ghi, div.jkl, div.mno,
+div.pqrs, div.tuv, div.wxyz {
+	display: none;
+	margin-top: 2em;
+}
+@media (max-width: 800px) {
+	.filtro-afiliados {
+		text-align: center;
+		padding: 0 !important;
+	}
+	.filtro-afiliados li a {
+		font-size: 1em;
+		margin: 0 .5em;
+		text-align: center;
+	}
+	.opciones-afiliados {
+		margin-left: -15px;
+	}
+	.opciones-afiliados p {
+		width: 100%;
+		text-align: center;
+		margin: .5em 0 !important;
+	}
+	.help-afiliados {
+		text-align: center;
+	}
+	.page-template-nosotros .col-md-3 {
+		margin-left: 0 !important;
+	}
+}
+@media (min-width: 801px) {
+	div.abc .col-md-6:nth-of-type(2), div.def .col-md-6:nth-of-type(2), div.ghi .col-md-6:nth-of-type(2), 
+	div.jkl .col-md-6:nth-of-type(2), div.mno .col-md-6:nth-of-type(2), div.pqrs .col-md-6:nth-of-type(2),
+	div.tuv .col-md-6:nth-of-type(2), div.wxyz .col-md-6:nth-of-type(2) {
+		padding: 0 0 0 15%;
+	}
+}
+.visible { display: inline-block !important; }
+.filtro-afiliados .active { 
+	color: $aqua; 
+	text-decoration: none; 
+}
+.btn-active {
+	background: $aqua !important;
+}
+.lista-personas {
+	list-style: none;
+	display: inline-block;
+}
+.lista-personas .lista-titulo span {
+	color: $red;
+	font-size: 2.313em;
+}
+.lista-personas .lista-titulo ul {
+	list-style: none;
+	color: $gray_2;
+	margin: 0;
+	padding: 0;
+}
+.lista-personas .lista-titulo ul li {
+	margin: 1em 0;
+	font-size: 1.188em;
+}

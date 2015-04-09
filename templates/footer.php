@@ -1,4 +1,5 @@
 	<?php wp_footer(); ?>
+	<?php if( empty( $pagename ) ) { ?>
 	<div class="navbar-fixed-bottom hidden-xs">
 		<div class="ads-footer">
 			<ul>
@@ -15,6 +16,7 @@
 			</ul>
 		</div>
 	</div>
+	<?php } ?>
 	<script type="text/javascript">
 		jQuery(document).ready(function(){
 			jQuery('.move-down a').on('click tap', function(){
@@ -25,6 +27,14 @@
 			jQuery('iframe').on('load', function() {
 			    jQuery("iframe").contents().find("div.google-maps-link").remove()
 			      .append(jQuery("<style type='text/css'>  .google-maps-link { display: none !important; } </style>"));
+			});
+			jQuery('.mostrar-afiliados').on('click tap', function(){
+				jQuery(this).toggleClass('btn-active');
+				jQuery('div.afiliados-wrapper').toggleClass('afiliados-hidden');
+			});
+			jQuery('.filtro-afiliados li a').on('click tap', function(){
+				jQuery('div.'+jQuery(this).attr('class')).addClass('visible');
+				jQuery(this).toggleClass('active');
 			});
 		});
     </script>
