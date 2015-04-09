@@ -868,3 +868,39 @@ div.pqrs, div.tuv, div.wxyz {
 	margin: 1em 0;
 	font-size: 1.188em;
 }
+.result-afiliados h3 {
+	font-family: $merriweather;
+	font-style: italic;
+	font-size: 1.365em !important;
+}
+.corredor .col-md-5 {
+	padding: .5em 0 0 0;
+	background: $gray_5_half;
+	background-image: url('assets/images/iconos/afiliado.png');
+	background-repeat: no-repeat;
+	background-position: 97% 10%;
+}
+.corredor .nombre {
+	text-transform: uppercase;
+	color: $gray_1;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+.nro-afiliado {
+	position: absolute;
+	top: 23px;
+	right: 12px;
+	font-size: 0.875em;
+}
+@media (max-width: 800px) {
+	.corredor {
+		padding: 0 !important;
+	}
+	.result-afiliados {
+		font-size: 80%;
+	}
+	.result-afiliados .col-xs-8 {
+		padding-left: 15px !important;
+	}
+}

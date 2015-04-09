@@ -31,10 +31,17 @@
 			jQuery('.mostrar-afiliados').on('click tap', function(){
 				jQuery(this).toggleClass('btn-active');
 				jQuery('div.afiliados-wrapper').toggleClass('afiliados-hidden');
+				jQuery('.result-afiliados').hide();
 			});
 			jQuery('.filtro-afiliados li a').on('click tap', function(){
 				jQuery('div.'+jQuery(this).attr('class')).addClass('visible');
 				jQuery(this).toggleClass('active');
+				jQuery('.result-afiliados').hide();
+			});
+			jQuery('.button-afiliado').on('click tap', function(){
+				if( jQuery('.input-afiliado').val() == '042' ) {
+					jQuery('.result-afiliados').toggleClass('hidden');
+				}
 			});
 		});
     </script>
