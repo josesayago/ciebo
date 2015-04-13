@@ -32,6 +32,7 @@
 				jQuery(this).toggleClass('btn-active');
 				jQuery('div.afiliados-wrapper').toggleClass('afiliados-hidden');
 				jQuery('.result-afiliados').hide();
+				jQuery('.afiliados-wrapper').show();
 			});
 			jQuery('.filtro-afiliados li a').on('click tap', function(){
 				jQuery('div.'+jQuery(this).attr('class')).addClass('visible');
@@ -40,8 +41,17 @@
 			});
 			jQuery('.button-afiliado').on('click tap', function(){
 				if( jQuery('.input-afiliado').val() == '042' ) {
-					jQuery('.result-afiliados').toggleClass('hidden');
+					jQuery('.afiliados-wrapper').hide();
+					jQuery('.result-afiliados').show();
+					jQuery('.result-afiliados').removeClass('hidden');
 				}
+			});
+			jQuery('.fichas').hide();
+			jQuery('.close-fichas').on('click tap', function(){
+				jQuery('.fichas').hide();
+			});
+			jQuery('.ahilad').on('click tap', function(){
+				jQuery('.fichas').show();
 			});
 		});
     </script>

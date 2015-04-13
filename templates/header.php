@@ -49,8 +49,8 @@
                         </ul>
                     </li>
                     <li class="visible-xs"><a href="#">Afiliación</a></li>
-                    <li><a href="#">Certificación <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
-                    <li><a href="#">Caras Felices <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
+                    <li><a href="<?php echo get_page_link( get_page_by_title('certificacion')->ID ); ?>">Certificación <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
+                    <li><a href="<?php echo get_page_link( get_page_by_title('caras felices')->ID ); ?>">Caras Felices <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
                     <li class="visible-xs"><a href="#">Noticias</a></li>
                     <li class="visible-xs"><a href="#">Eventos</a></li>
                     <li class="visible-xs"><a href="#">Blog Inmobiliario</a></li>
