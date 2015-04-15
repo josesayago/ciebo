@@ -22,7 +22,9 @@ Author URI: http://josesayago.com
 body {
   padding: 80px 0 0 0;
   font-weight: normal !important;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  max-width: 1280px;
+  margin: 0 auto; }
 
 /**
  * Menu Superior
@@ -701,31 +703,38 @@ body {
 /**
  * Pie Otros
  */
-.page .pie {
+.page .pie,
+.single .pie {
   font-family: "Lato", sans-serif;
   font-weight: 300; }
 
 .page .pie ul,
+.single .pie ul,
 .page-template-caras-felices ul {
   list-style: none; }
 
-.page .pieizq {
+.page .pieizq,
+.single .pieizq {
   background: #1c6b4d;
   color: white;
   padding: 1% 5% 2.7% 5%; }
 
-.page .pieizq h3 {
+.page .pieizq h3,
+.single .pieizq h3 {
   font-size: 1em;
   font-weight: bold; }
 
-.page .pieizq ul li {
+.page .pieizq ul li,
+.single .pieizq ul li {
   margin: 0 0 0 -40px;
   padding: 0; }
 
-.page .pieizq a {
+.page .pieizq a,
+.single .pieizq a {
   color: white; }
 
-.page .pieder {
+.page .pieder,
+.single .pieder {
   background: gray;
   text-align: right;
   padding: 1% 3% 0 3%;
@@ -744,21 +753,26 @@ body {
   font-weight: bold;
   font-size: .988em; }
 
-.page .pieder ul li {
+.page .pieder ul li,
+.single .pieder ul li {
   display: inline-block; }
 
-.page .pie .telf {
+.page .pie .telf,
+.single .pie .telf {
   font-weight: bold;
   font-size: 1.188em; }
 
-.page .pie iframe {
+.page .pie iframe,
+.single .pie iframe {
   margin: 0 auto; }
 
-.page .pie .socialicons a {
+.page .pie .socialicons a,
+.single .pie .socialicons a {
   margin: 0 0 0 .1em;
   color: white; }
 
-.page .pie .socialicons a:first-child {
+.page .pie .socialicons a:first-child,
+.single .pie .socialicons a:first-child {
   margin: 0 !important; }
 
 .page-template-caras-felices .pieder img {
@@ -769,6 +783,9 @@ body {
   margin: 0 auto;
   vertical-align: middle; }
 
+@media (max-width: 800px) {
+  .page-template-caras-felices .pieder .caras-logo {
+    margin-left: 11%; } }
 /**
  * Nosotros
  */
@@ -1571,11 +1588,13 @@ div.pqrs, div.tuv, div.wxyz {
   -webkit-padding-end: 20px;
   -webkit-padding-start: 2px;
   -webkit-user-select: none;
-  -moz-appearance: button;
+  -moz-appearance: none;
   -moz-border-radius: 0px;
   -moz-padding-end: 20px;
   -moz-padding-start: 2px;
   -moz-user-select: none;
+  text-indent: 0.01px;
+  text-overflow: '';
   border: 1px solid #AAA;
   color: #333333;
   white-space: nowrap;
@@ -1602,11 +1621,13 @@ div.pqrs, div.tuv, div.wxyz {
   -webkit-padding-end: 20px;
   -webkit-padding-start: 2px;
   -webkit-user-select: none;
-  -moz-appearance: button;
+  -moz-appearance: none;
   -moz-border-radius: 0px;
   -moz-padding-end: 20px;
   -moz-padding-start: 2px;
   -moz-user-select: none;
+  text-indent: 0.01px;
+  text-overflow: '';
   background-image: url("assets/images/select-triangle.png");
   background-position: 97% center;
   background-repeat: no-repeat;
@@ -1638,5 +1659,71 @@ div.pqrs, div.tuv, div.wxyz {
 
   .page-template-caras-felices .caras-head .page-banner {
     margin: 20em 0 0 0; } }
+/**
+ * Blog
+ */
+.page-template-blog .inner-content {
+  margin: 0; }
+
+@media (min-width: 801px) {
+  .page-template-blog .slposts-ulist-title {
+    max-width: 60%; } }
+@media (max-width: 800px) {
+  .page-template-blog .slposts-ulist-title {
+    padding-left: 0; } }
+.page-template-blog .slposts-ulist-title a {
+  color: #33b2b2 !important; }
+
+.page-template-blog .slposts-ulist-litem {
+  border-top: 1px solid rgba(216, 216, 216, 0.5);
+  padding: 1em 0 3em 0; }
+
+.page-template-blog .slposts-ulist-excerpt {
+  text-align: left; }
+
+.page-template-blog .slposts-ulist-litem:nth-of-type(1) {
+  border-top: 0;
+  padding: 0 0 3em 0; }
+
+.page-template-blog .slposts-ulist-excerpt a {
+  display: block;
+  margin: 1em 0 0 0;
+  text-indent: 0; }
+
+.page-template-blog .slposts-ulist-excerpt li {
+  text-indent: 2em; }
+
+.page-template-blog .slposts-ulist-meta {
+  margin: 0 0 1em 0; }
+
+.single .titulo {
+  font-weight: bold;
+  font-style: italic; }
+
+.single .fecha {
+  font-family: "Lato", sans-serif;
+  color: #b3b3b3;
+  padding: 0 0 1.5em 0;
+  display: block; }
+
+.single .dia {
+  text-transform: lowercase; }
+
+.single .button {
+  text-align: center;
+  background: #d75a24;
+  color: white;
+  border: 0;
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+  padding: .7em;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0; }
+
+.single .button-action {
+  margin: 2em 1em 0 0; }
 
 /*# sourceMappingURL=style.css.map */

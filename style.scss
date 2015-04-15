@@ -72,7 +72,13 @@ $merriweather: "Merriweather", sans-serif;
 /**
  * Cuerpo
  */
-body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; }
+body { 
+	padding: 80px 0 0 0; 
+	font-weight: normal !important; 
+	overflow-x: hidden; 
+	max-width: 1280px;
+	margin: 0 auto;
+}
 /**
  * Menu Superior
  */
@@ -629,21 +635,28 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 /**
  * Pie Otros
  */
-.page .pie { font-family: $lato-sans; font-weight: 300; }
+.page .pie,
+.single .pie { font-family: $lato-sans; font-weight: 300; }
 .page .pie ul,
+.single .pie ul,
 .page-template-caras-felices ul { list-style: none; }
-.page .pieizq {
+.page .pieizq,
+.single .pieizq {
 	background: $green_1_solid;
 	color: $white;
 	padding: 1% 5% 2.7% 5%;
 }
-.page .pieizq h3 {
+.page .pieizq h3,
+.single .pieizq h3 {
 	font-size: 1em;
 	font-weight: bold;
 }
-.page .pieizq ul li { margin: 0 0 0 -40px; padding: 0; }
-.page .pieizq a { color: $white; }
-.page .pieder {
+.page .pieizq ul li,
+.single .pieizq ul li { margin: 0 0 0 -40px; padding: 0; }
+.page .pieizq a,
+.single .pieizq a { color: $white; }
+.page .pieder,
+.single .pieder {
 	background: $gray_2;
 	text-align: right;
 	padding: 1% 3% 0 3%;
@@ -664,21 +677,31 @@ body { padding: 80px 0 0 0; font-weight: normal !important; overflow-x: hidden; 
 }
 .page-template-caras-felices .pieder .dir {
 }
-.page .pieder ul li { display: inline-block; }
-.page .pie .telf { 
+.page .pieder ul li,
+.single .pieder ul li { display: inline-block; }
+.page .pie .telf,
+.single .pie .telf { 
 	font-weight: bold; 
 	font-size: 1.188em;
 }
-.page .pie iframe { margin: 0 auto; }
-.page .pie .socialicons a { margin: 0 0 0 .1em; color: $white; }
-.page .pie .socialicons a:first-child { margin: 0 !important; }
-.page-template-caras-felices .pieder img {
+.page .pie iframe,
+.single .pie iframe { margin: 0 auto; }
+.page .pie .socialicons a,
+.single .pie .socialicons a { margin: 0 0 0 .1em; color: $white; }
+.page .pie .socialicons a:first-child,
+.single .pie .socialicons a:first-child { margin: 0 !important; }
+.page-template-caras-felices .pieder img, {
 	width: 70%;
 	padding: 10% 20% 0 0;
 }
 .page-template-caras-felices .pieder .caras-logo {
 	margin: 0 auto;
 	vertical-align: middle;
+}
+@media (max-width: 800px) {
+	.page-template-caras-felices .pieder .caras-logo {
+		margin-left: 11%;
+	}
 }
 /**
  * Nosotros
@@ -1348,11 +1371,13 @@ div.pqrs, div.tuv, div.wxyz {
 	-webkit-padding-end: 20px;
 	-webkit-padding-start: 2px;
 	-webkit-user-select: none;
-	-moz-appearance: button;
+	-moz-appearance: none;
 	-moz-border-radius: 0px;
 	-moz-padding-end: 20px;
 	-moz-padding-start: 2px;
 	-moz-user-select: none;
+	text-indent: 0.01px;
+    text-overflow: '';
 	border: 1px solid #AAA;
 	color: $gray_4;
 	white-space: nowrap;
@@ -1379,11 +1404,13 @@ div.pqrs, div.tuv, div.wxyz {
 	-webkit-padding-end: 20px;
 	-webkit-padding-start: 2px;
 	-webkit-user-select: none;
-	-moz-appearance: button;
+	-moz-appearance: none;
 	-moz-border-radius: 0px;
 	-moz-padding-end: 20px;
 	-moz-padding-start: 2px;
 	-moz-user-select: none;
+	text-indent: 0.01px;
+    text-overflow: '';
 	background-image: url('assets/images/select-triangle.png');
 	background-position: 97% center;
 	background-repeat: no-repeat;
@@ -1416,4 +1443,72 @@ div.pqrs, div.tuv, div.wxyz {
 	.page-template-caras-felices .caras-head .page-banner {
 		margin: 20em 0 0 0;
 	}
+}
+/**
+ * Blog
+ */
+.page-template-blog .inner-content {
+	margin: 0;
+}
+@media (min-width: 801px) {
+	.page-template-blog .slposts-ulist-title {
+		max-width: 60%;
+	}
+}
+@media (max-width: 800px) {
+	.page-template-blog .slposts-ulist-title {
+		padding-left: 0;
+	}	
+}
+.page-template-blog .slposts-ulist-title a {
+	color: $aqua !important;
+}
+.page-template-blog .slposts-ulist-litem {
+	border-top: 1px solid $gray_5_half;
+	padding: 1em 0 3em 0;
+}
+.page-template-blog .slposts-ulist-excerpt {
+	text-align: left;
+}
+.page-template-blog .slposts-ulist-litem:nth-of-type(1) {
+	border-top: 0;
+	padding: 0 0 3em 0;
+}
+.page-template-blog .slposts-ulist-excerpt a {
+	display: block;
+	margin: 1em 0 0 0;
+	text-indent: 0;
+}
+.page-template-blog .slposts-ulist-excerpt li {
+	text-indent: 2em;
+}
+.page-template-blog .slposts-ulist-meta {
+	margin: 0 0 1em 0;
+}
+.single .titulo {
+	font-weight: bold;
+	font-style: italic;
+}
+.single .fecha {
+	font-family: $lato-sans;
+	color: $gray_6;
+	padding: 0 0 1.5em 0;
+	display: block;
+}
+.single .dia {
+	text-transform: lowercase;
+}
+.single .button {
+	text-align: center;
+	background: $red;
+	color: $white;
+	border: 0;
+	font-family: $merriweather;
+	font-weight: bold;
+	font-size: 1em;
+	padding: .7em;
+	@include radius-off;
+}
+.single .button-action {
+	margin: 2em 1em 0 0;
 }

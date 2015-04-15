@@ -22,7 +22,7 @@
     <script>document.createElement( "picture" );</script>
 </head>
 <body <?php body_class(); ?>>
-    <?php if( empty( $pagename ) ) { ?><div class="jumbotron"><?php } ?>
+    <?php if( is_home() || is_front_page() ) { ?><div class="jumbotron"><?php } ?>
         <div class="container">
             <!-- \Menu -->
             <nav class="navbar navbar-default navbar-fixed-top">
@@ -53,7 +53,7 @@
                     <li><a href="<?php echo get_page_link( get_page_by_title('caras felices')->ID ); ?>">Caras Felices <span class="nohover">&nbsp;&nbsp;&nbsp;/</span></a></li>
                     <li class="visible-xs"><a href="#">Noticias</a></li>
                     <li class="visible-xs"><a href="#">Eventos</a></li>
-                    <li class="visible-xs"><a href="#">Blog Inmobiliario</a></li>
+                    <li class="visible-xs"><a href="<?php echo get_page_link( get_page_by_title('blog inmobiliario')->ID ); ?>">Blog Inmobiliario</a></li>
                     <li class="visible-xs"><a href="#">Leyes y Decretos</a></li>
                     <li class="hidden-xs"><a href="#">Contacto</a></li>
                   </ul>
@@ -61,7 +61,7 @@
               </div><!-- /.container-fluid -->
             </nav>
             <!-- /Menu -->
-            <?php if( empty( $pagename ) ) { ?>
+            <?php if( is_home() || is_front_page() ) { ?>
             <div class="row">
                 <div class="col-md-3 jumboquote">
                     <div class="jumbotext">

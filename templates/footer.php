@@ -1,5 +1,5 @@
 	<?php wp_footer(); ?>
-	<?php if( empty( $pagename ) ) { ?>
+	<?php if( is_home() || is_front_page() ) { ?>
 	<div class="navbar-fixed-bottom hidden-xs">
 		<div class="ads-footer">
 			<ul>
