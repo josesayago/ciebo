@@ -53,6 +53,10 @@
 			jQuery('.ahilad').on('click tap', function(){
 				jQuery('.fichas').show();
 			});
+			jQuery('.buscador-wrapper .nav-buscador .titulo').on('click tap', function(){
+				jQuery(this).parent().children('ul').slideToggle('slow');
+				jQuery(this).parent().children('span').children('i').toggleClass('fa fa-caret-right fa-lg').toggleClass('fa fa-caret-down fa-lg');
+			});
 		});
     </script>
 </body>

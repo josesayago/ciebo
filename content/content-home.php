@@ -293,7 +293,7 @@
 			</p>
 		</div>
 		<div class="col-md-6">
-			<iframe width="auto" height="auto" frameborder="0" style="border:0;" src="https://www.google.com/maps/embed/v1/search?q=C%C3%A1mara%20Inmobiliaria%20del%20Estado%20Bol%C3%ADvar%2C%20Ciudad%20Guayana%2C%20Bol%C3%ADvar%2C%20Venezuela&key=AIzaSyCN8_IlAk2hkfjrP9t6k4wWvmekLJMuaDA"></iframe>
+			<a href="https://www.google.com/maps/place/C%C3%A1mara+Inmobiliaria+del+Estado+Bol%C3%ADvar/@8.297713,-62.727852,15z/data=!4m2!3m1!1s0x0:0x1f2a53491140f4f7?hl=es-ES" target="_blank"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/mapa.png" /></a>
 		</div>
 	</div>
 </div>

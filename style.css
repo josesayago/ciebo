@@ -1726,4 +1726,222 @@ div.pqrs, div.tuv, div.wxyz {
 .single .button-action {
   margin: 2em 1em 0 0; }
 
+/**
+ * Noticias
+ */
+.page-template-noticias .slposts-wrapper {
+  margin-left: -7%; }
+
+.page-template-noticias .slposts-block-item:nth-child(1n) {
+  margin: 0 3% 0 0; }
+
+.page-template-noticias .slposts-block-item:nth-child(2n) {
+  clear: right; }
+
+.page-template-noticias .slposts-block-item a {
+  color: #33b2b2 !important; }
+
+.page-template-noticias .slposts-block-title {
+  display: block;
+  min-height: 70px; }
+
+.page-template-noticias .slposts-block-meta {
+  float: none;
+  display: block;
+  border: 0;
+  margin: 0 0 4% -1%;
+  font-family: "Lato", sans-serif; }
+
+.page-template-noticias .slposts-block-excerpt {
+  text-align: left;
+  font-family: "Lato", sans-serif; }
+
+.page-template-noticias .slposts-block-excerpt a {
+  display: block;
+  margin: 1em 0 0 -2em; }
+
+.page-template-noticias .slposts-block-pagination {
+  border: 0; }
+
+@media (max-width: 800px) {
+  .page-template-noticias .slposts-wrapper {
+    margin-left: 0; }
+
+  .page-template-noticias .slposts-block-item {
+    margin: 0;
+    width: 100%; }
+
+  .page-template-noticias .slposts-block-meta {
+    margin: 0; }
+
+  .page-template-noticias .slposts-block-title {
+    padding: 0; } }
+/**
+ * Buscador de Inmuebles
+ */
+.buscador-wrapper nav {
+  margin: 2em 0 0 0;
+  padding: 0;
+  font-family: "Lato", sans-serif; }
+
+.buscador-wrapper nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.buscador-wrapper nav ul ul {
+  display: none; }
+
+.buscador-wrapper nav ul li ul li {
+  border: 0;
+  padding: 0 0 0 1em; }
+
+.buscador-wrapper nav ul li ul li:first-child {
+  padding-top: 1em; }
+
+.buscador-wrapper nav ul li ul li input {
+  width: 40%;
+  background: rgba(51, 178, 178, 0.5);
+  outline: none;
+  border: 0;
+  padding: 0 .5em;
+  font-family: "Lato", sans-serif; }
+
+.buscador-wrapper ::-webkit-input-placeholder {
+  color: gray; }
+
+.buscador-wrapper :-moz-placeholder {
+  color: gray; }
+
+.buscador-wrapper ::-moz-placeholder {
+  color: gray; }
+
+.buscador-wrapper :-ms-input-placeholder {
+  color: gray; }
+
+.buscador-wrapper nav ul li ul li input:first-child {
+  margin-right: .5em; }
+
+.buscador-wrapper nav ul li ul li input:last-child {
+  margin-left: .5em; }
+
+.buscador-wrapper nav .seccion {
+  display: block;
+  padding: 1em 3em;
+  border: 1px solid rgba(216, 216, 216, 0.5);
+  border-left: 0;
+  width: 100%;
+  margin: 0; }
+
+.buscador-wrapper nav .titulo {
+  width: 100%;
+  display: block;
+  cursor: pointer; }
+
+.buscador-wrapper nav a {
+  color: #33b2b2; }
+
+.buscador-wrapper nav i {
+  color: #4e4e4e; }
+
+.buscador-wrapper .inner-content {
+  margin-top: 2.1%; }
+
+.buscador-wrapper .btn-buscar {
+  text-align: center;
+  background: #d75a24;
+  color: white;
+  border: 0;
+  font-family: "Merriweather", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  padding: .5em .5em .4em .5em;
+  margin-right: 1em;
+  outline: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0; }
+
+.buscador-wrapper .buscador {
+  background: rgba(28, 107, 77, 0.7);
+  padding: 1em 3em;
+  margin-top: 2em; }
+
+.buscador-wrapper .buscador h2 {
+  font-family: "Merriweather", sans-serif;
+  color: white;
+  font-style: italic;
+  margin-bottom: 1em; }
+
+.buscador-wrapper .buscador .etiqueta {
+  color: white;
+  text-align: right;
+  font-family: "Lato", sans-serif; }
+
+.buscador-wrapper .buscador select {
+  width: 100%;
+  -webkit-appearance: button;
+  -webkit-border-radius: 0px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  -moz-appearance: none;
+  -moz-border-radius: 0px;
+  -moz-padding-end: 20px;
+  -moz-padding-start: 2px;
+  -moz-user-select: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  background-image: url("assets/images/select-triangle.png");
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  border: 1px solid #AAA;
+  color: #b3b3b3;
+  white-space: nowrap;
+  height: 30px;
+  text-align: right;
+  padding: 0 1.7em 0 .5em;
+  outline: none; }
+
+.page-template-buscador .pieder,
+.page-template-certificacion .pieder {
+  padding: 1% 3% 1.55% 1%; }
+
+/**
+ * Resultados Buscador
+ */
+.resultados-wrapper .row {
+  margin-left: 2%;
+  margin-bottom: 1%; }
+
+.resultados-wrapper .apto {
+  margin-right: 1%; }
+
+.resultados-wrapper .apto div {
+  background: #d8d8d8;
+  margin: 0;
+  padding: 0; }
+
+.resultados-wrapper .apto .apto-desc {
+  margin-top: 0;
+  padding: .5em;
+  border-top: 0.3em solid #1c6b4d; }
+
+.resultados-wrapper .apto .apto-desc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.resultados-wrapper .apto .apto-desc h3 {
+  font-size: 1.365em;
+  color: #1c6b4d; }
+
+.resultados-wrapper .apto .apto-desc h4 {
+  color: gray;
+  font-weight: normal;
+  font-size: 1.185em;
+  padding-top: 1em; }
+
 /*# sourceMappingURL=style.css.map */

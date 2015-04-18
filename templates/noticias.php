@@ -1,25 +1,19 @@
 <?php
 /**
- * Template Name: Certificación
- * Description: Plantilla para la sección "Certificación" del sitio.
+ * Template Name: Noticias
+ * Description: Plantilla para la sección "Noticias" del sitio.
  */
 get_template_part('templates/header');
 ?>
 <div class="certificacion-wrapper">
 	<div class="col-md-12 col-xs-12">
-		<div class="breadcrumb hidden-xs"><a href="<?php echo get_bloginfo('url'); ?>">Inicio</a> > Certificación</div>
+		<div class="breadcrumb hidden-xs"><a href="<?php echo get_bloginfo('url'); ?>">Inicio</a> > Noticias</div>
 		<div class="col-md-3 col-xs-12">
-			<h2 class="page-banner">Certificación</h2>
+			<h2 class="page-banner">Noticias</h2>
 		</div>
 		<div class="col-md-9 col-xs-12">
 			<div class="inner-content">
-			<?php 
-				if( have_posts() ) : 
-					while( have_posts() ) : the_post();
-						the_content();
-					endwhile; 
-				endif;
-			?>
+				<?php get_template_part( 'content/content', 'noticias' ); ?>
 			</div>
 		</div>
 	</div>
