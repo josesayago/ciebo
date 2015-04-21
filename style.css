@@ -1944,6 +1944,9 @@ div.pqrs, div.tuv, div.wxyz {
   font-size: 1.185em;
   padding-top: 1em; }
 
+.resultados-wrapper .apto a {
+  color: #1c6b4d; }
+
 .page-template-buscador-resultados .pieder {
   padding: 1% 3% 1.55% 1%; }
 
@@ -2051,5 +2054,36 @@ div.pqrs, div.tuv, div.wxyz {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -o-border-radius: 0; }
+
+@-moz-document url-prefix() {
+  fieldset {
+    display: table-cell; } }
+@media (max-width: 800px) {
+  .page-template-ficha-propiedad .text-right {
+    text-align: center; }
+
+  .ficha-wrapper .ficha-agente {
+    margin: 0; }
+
+  .ficha-wrapper .ficha-agente div {
+    padding-left: .5em; }
+
+  .ficha-wrapper .corredor .nombre {
+    margin-top: .5em; }
+
+  .ficha-wrapper .corredor .email {
+    padding-bottom: 0; }
+
+  .ficha-wrapper .nro-afiliado {
+    top: 14%; }
+
+  .ficha-wrapper .pic-m6 {
+    margin-left: .5em; }
+
+  .ficha-mapa .col-md-12 img {
+    width: 95%; }
+
+  .ficha-mapa .col-md-2 img {
+    padding-top: 5%; } }
 
 /*# sourceMappingURL=style.css.map */

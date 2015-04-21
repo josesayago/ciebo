@@ -1725,6 +1725,9 @@ div.pqrs, div.tuv, div.wxyz {
 	font-size: 1.185em;
 	padding-top: 1em;
 }
+.resultados-wrapper .apto a {
+	color: $green_1_solid;
+}
 .page-template-buscador-resultados .pieder {
 	padding: 1% 3% 1.55% 1%;
 }
@@ -1772,7 +1775,6 @@ div.pqrs, div.tuv, div.wxyz {
 	background:  transparent url('assets/images/directivos/06-jacque.png') no-repeat; 
 	background-size: 100% 100%; 
 }
-.ficha-wrapper .corredor {  }
 .ficha-wrapper .corredor {
 	padding: .5em;
 	background: $gray_5_half;
@@ -1830,4 +1832,36 @@ div.pqrs, div.tuv, div.wxyz {
 	padding: .5em 1.5em .4em 0;
 	outline: none;
 	@include radius-off;
+}
+@-moz-document url-prefix() {
+  fieldset { display: table-cell; }
+}
+@media (max-width: 800px) {
+	.page-template-ficha-propiedad .text-right {
+		text-align: center;
+	}
+	.ficha-wrapper .ficha-agente {
+		margin: 0;
+	}
+	.ficha-wrapper .ficha-agente div {
+		padding-left: .5em;
+	}
+	.ficha-wrapper .corredor .nombre {
+		margin-top: .5em;
+	}
+	.ficha-wrapper .corredor .email {
+		padding-bottom: 0;
+	}
+	.ficha-wrapper .nro-afiliado {
+		top: 14%;
+	}
+	.ficha-wrapper .pic-m6  {
+		margin-left: .5em;
+	}
+	.ficha-mapa .col-md-12 img {
+		width: 95%;
+	}
+	.ficha-mapa .col-md-2 img {
+		padding-top: 5%;
+	}
 }

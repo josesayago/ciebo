@@ -10,7 +10,7 @@ get_template_part('templates/header');
 		<div class="breadcrumb hidden-xs"><a href="<?php echo get_bloginfo('url'); ?>">Inicio</a> > <a href="<?php echo get_page_link( get_page_by_title('buscador de inmuebles')->ID ); ?>">Buscador de Inmuebles</a> > <a href="/buscador-inmuebles/resultados/">Resultados</a> > Propiedad</div>
 		<div class="col-md-3 col-xs-12">
 			<h2 class="page-banner">Buscador de Inmuebles</h2>
-			<div class="clearfix"></div>
+			<div class="clearfix">&nbsp;</div>
 			<div class="ficha-thumbs">
 				<div class="row">
 					<div class="col-md-4 col-xs-4">
@@ -128,49 +128,51 @@ get_template_part('templates/header');
 				<div class="row ficha-tabla">
 					<div class="col-md-9 col-xs-12">
 						<div class="clearfix">&nbsp;</div>
-						<table class="table table-bordered">
-							<tr>
-								<td>
-									<span class="title">Precio de alquiler</span>
-									Bs. 20.500
-								</td>
-								<td>
-									<span class="title">Superficie total m<sup>2</sup></span>
-									200
-								</td>
-								<td>
-									<span class="title">Construcción m<sup>2</sup></span>
-									160
-								</td>
-								<td>
-									<span class="title">Precio / m<sup>2</sup></span>
-									Bs. 102,5
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<span class="title">Habitaciones</span>
-									3
-								</td>
-								<td>
-									<span class="title">Baños</span>
-									3
-								</td>
-								<td>
-									<span class="title">Estacionamiento</span>
-									4
-								</td>
-								<td>
-									<span class="title">Antigüedad</span>
-									30 años
-								</td>
-							</tr>
-						</table>
+						<div class="table-responsive">
+							<table class="table table-bordered">
+								<tr>
+									<td>
+										<span class="title">Precio de alquiler</span>
+										Bs. 17.500
+									</td>
+									<td>
+										<span class="title">Superficie total m<sup>2</sup></span>
+										200
+									</td>
+									<td>
+										<span class="title">Construcción m<sup>2</sup></span>
+										85
+									</td>
+									<td>
+										<span class="title">Precio / m<sup>2</sup></span>
+										Bs. 102,5
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<span class="title">Habitaciones</span>
+										2
+									</td>
+									<td>
+										<span class="title">Baños</span>
+										2
+									</td>
+									<td>
+										<span class="title">Estacionamiento</span>
+										4
+									</td>
+									<td>
+										<span class="title">Antigüedad</span>
+										30 años
+									</td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="row btn-buscador">
 					<div class="col-md-12 col-xs-12">
-						<p class="text-right"><a href="" class="btn">Ir al buscador</a></p>
+						<p class="text-right"><a href="/buscador" class="btn">Ir al buscador</a></p>
 					</div>
 				</div>
 			</div>

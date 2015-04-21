@@ -82,7 +82,7 @@ get_template_part('templates/header');
 							<img src="http://placehold.it/200x200" />
 						</div>
 						<div class="apto-desc">
-							<h3>Apartamento Res. Kamoiran Alta Vista Norte</h3>
+							<h3><a href="propiedad/">Apartamento Res. Kamoiran Alta Vista Norte</a></h3>
 							<ul>
 								<li>85 m<sup>2</sup></li>
 								<li>2 Habitaciones</li>
