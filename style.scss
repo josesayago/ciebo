@@ -1725,3 +1725,109 @@ div.pqrs, div.tuv, div.wxyz {
 	font-size: 1.185em;
 	padding-top: 1em;
 }
+.page-template-buscador-resultados .pieder {
+	padding: 1% 3% 1.55% 1%;
+}
+/**
+ * Ficha Propiedad
+ */
+.ficha-thumbs .row {
+	margin-bottom: 10%;
+}
+.ficha-mapa {
+	margin-left: 2.5%;
+}
+.ficha-mapa .col-md-12 {
+	padding-left: 1em;
+}
+.ficha-mapa .col-md-12 img {
+	width: 100%;
+}
+.ficha-mapa .row {
+	padding: 2em 0 0 0;
+}
+.ficha-mapa .col-md-2 img {
+	padding-top: 70%;
+}
+.ficha-mapa .col-md-10 p {
+	text-indent: 0;
+}
+.ficha-wrapper .section-title {
+	font-family: $merriweather;
+	font-style: italic;
+	font-weight: bold;
+	padding: 3.5% 0 0 0;
+}
+.ficha-wrapper .ficha-agente {
+	margin-top: 59%;
+	margin-left: 5%;
+	background: $gray_5_half;
+	width: 100%;
+	display: block;
+	padding: 3%;
+}
+.ficha-wrapper .pic-m6  { 
+	height: 80px;
+	width: 80px;
+	background:  transparent url('assets/images/directivos/06-jacque.png') no-repeat; 
+	background-size: 100% 100%; 
+}
+.ficha-wrapper .corredor {  }
+.ficha-wrapper .corredor {
+	padding: .5em;
+	background: $gray_5_half;
+	background-image: url('assets/images/iconos/afiliado.png');
+	background-repeat: no-repeat;
+	background-position: 97% 2%;
+}
+.ficha-wrapper .corredor .nombre {
+	text-transform: uppercase;
+	color: $gray_1;
+	font-size: 1em;
+	font-weight: bold;
+	margin-bottom: 1em;
+	margin-top: 30%;
+}
+.ficha-wrapper .corredor .email {
+	padding-bottom: 64.5%;
+}
+.ficha-wrapper .nro-afiliado {
+	position: absolute;
+	top: 30%;
+	right: 13px;
+	font-size: 0.875em;
+}
+.page-template-ficha-propiedad .pieder {
+	padding: 1% 3% 1.55% 1%;
+}
+.page-template-ficha-propiedad table .title {
+	display: block;
+	color: $gray_6;
+	margin: 0 0 .5em 0;
+}
+.page-template-ficha-propiedad table {
+	margin-top: 1%;
+}
+.page-template-ficha-propiedad table td {
+	color: $gray_2;
+	font-family: $lato-sans;
+}
+.page-template-ficha-propiedad .ficha-tabla {
+	padding: 0;
+	margin: 0;
+}
+.page-template-ficha-propiedad .btn-buscador {
+	padding: 3% 6% 0 0;
+}
+.page-template-ficha-propiedad .btn {
+	text-align: center;
+	background: $red;
+	color: $white;
+	border: 0;
+	font-family: $merriweather;
+	font-weight: bold;
+	font-size: 1em;
+	padding: .5em 1.5em .4em 0;
+	outline: none;
+	@include radius-off;
+}

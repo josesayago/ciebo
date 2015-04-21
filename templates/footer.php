@@ -57,6 +57,9 @@
 				jQuery(this).parent().children('ul').slideToggle('slow');
 				jQuery(this).parent().children('span').children('i').toggleClass('fa fa-caret-right fa-lg').toggleClass('fa fa-caret-down fa-lg');
 			});
+			jQuery('button.buscador').on('click tap', function(){
+				window.location = 'buscador-inmuebles/resultados/';
+			});
 		});
     </script>
 </body>

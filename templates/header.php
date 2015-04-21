@@ -85,7 +85,12 @@
                             </p>
                             <p>
                                 <select name="propiedad">
-                                    <option value="">Propiedad 1</option>
+                                    <option value="apartamento">Apartamento</option>
+                                    <option value="casa">Casa</option>
+                                    <option value="galpon">Galpón</option>
+                                    <option value="oficina-local">Oficina / Local</option>
+                                    <option value="terreno">Terreno</option>
+                                    <option value="townhouse">Townhouse</option>
                                 </select>
                             </p>
                         </div>
@@ -95,7 +100,8 @@
                             </p>
                             <p>
                                 <select name="operacion">
-                                    <option value="">Operacion 1</option>
+                                    <option value="compra">Compra</option>
+                                    <option value="venta">Venta</option>
                                 </select>
                             </p>
                         </div>
@@ -105,12 +111,13 @@
                             </p>
                             <p>
                                 <select name="ciudad">
-                                    <option value="">Mérida</option>
+                                    <option value="ciudad-bolivar">Ciudad Bolívar</option>
+                                    <option value="ciudad-guayana">Ciudad Guayana</option>
                                 </select>
                             </p>
                         </div>
                         <p class="text-right">
-                            <button>Buscar</button>
+                            <button class="buscador">Buscar</button>
                         </p>
                     </div> 
                 </div>
