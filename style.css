@@ -118,9 +118,12 @@ body {
   -ms-transition: all .1s linear;
   transition: all .1s linear; }
 
+@media (max-width: 600px) {
+  .navbar-brand {
+    padding: 1% 0 0 30% !important; } }
 @media (max-width: 800px) {
   .navbar-brand {
-    padding: 1% 0 0 36%; }
+    padding: 1% 0 0 39%; }
 
   .nohover {
     display: none; }
@@ -128,7 +131,7 @@ body {
   .navbar-collapse ul li a {
     line-height: 1em;
     margin: 0;
-    padding-left: 12%;
+    padding-left: 8%;
     height: 50px;
     border-bottom: 1px solid rgba(216, 216, 216, 0.5); }
 
@@ -211,6 +214,11 @@ body {
     -webkit-padding-end: 20px;
     -webkit-padding-start: 2px;
     -webkit-user-select: none;
+    -moz-appearance: none;
+    -moz-border-radius: 0px;
+    -moz-padding-end: 20px;
+    -moz-padding-start: 2px;
+    -moz-user-select: none;
     background-image: url("assets/images/select-triangle.png");
     background-position: 97% center;
     background-repeat: no-repeat;
@@ -332,6 +340,11 @@ body {
     -webkit-padding-end: 20px;
     -webkit-padding-start: 2px;
     -webkit-user-select: none;
+    -moz-appearance: none;
+    -moz-border-radius: 0px;
+    -moz-padding-end: 20px;
+    -moz-padding-start: 2px;
+    -moz-user-select: none;
     background-image: url("assets/images/select-triangle.png");
     background-position: 97% center;
     background-repeat: no-repeat;

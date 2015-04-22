@@ -46,7 +46,7 @@ get_template_part('templates/header');
 			</ul>
 		</div>
 	</div>
-	<div class="col-md-6 pieder">
+	<div id="contacto" class="col-md-6 pieder">
 		<div class="col-md-3">
 			<p class="telf">0286 9613446</p>
 			<p class="telf">0424 9163065</p>

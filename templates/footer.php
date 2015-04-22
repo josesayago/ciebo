@@ -60,6 +60,18 @@
 			jQuery('button.buscador').on('click tap', function(){
 				window.location = 'buscador-inmuebles/resultados/';
 			});
+			if( jQuery(document).width() <= 800 ) {
+				jQuery(window).scroll(function() {
+					if( jQuery(this).scrollTop() > 0 ) {
+						jQuery('.navbar').fadeOut();
+					}
+					clearTimeout(jQuery.data(this, 'scrollTimer'));
+				    jQuery.data(this, 'scrollTimer', setTimeout(function() {
+				        // do something
+				        jQuery('.navbar').fadeIn();
+				    }, 250));
+				});
+			}
 		});
     </script>
 </body>

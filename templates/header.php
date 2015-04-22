@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-CIEBO.png" /></a>
+                  <a class="navbar-brand" href="<?php echo get_bloginfo('url'); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-CIEBO.png" /></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navegacion">
@@ -55,7 +55,7 @@
                     <li class="visible-xs"><a href="#">Eventos</a></li>
                     <li class="visible-xs"><a href="<?php echo get_page_link( get_page_by_title('blog inmobiliario')->ID ); ?>">Blog Inmobiliario</a></li>
                     <li class="visible-xs"><a href="#">Leyes y Decretos</a></li>
-                    <li class="hidden-xs"><a href="#">Contacto</a></li>
+                    <li class="hidden-xs"><a href="#contacto">Contacto</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
               </div><!-- /.container-fluid -->
@@ -71,7 +71,7 @@
             </div>
             <div class="row">
                 <div class="col-md-2 jumboaction">
-                    <a href="<?php echo get_theme_mod('jumbotron_hpcalltoaction_link'); ?>"><?php echo get_theme_mod('jumbotron_hpcalltoaction'); ?></a>
+                    <a href="http://ciebo.laelitenetwork.com/afiliacion/"><?php echo get_theme_mod('jumbotron_hpcalltoaction'); ?></a>
                 </div>
             </div>
             <div class="row">
@@ -101,7 +101,7 @@
                             <p>
                                 <select name="operacion">
                                     <option value="compra">Compra</option>
-                                    <option value="venta">Venta</option>
+                                    <option value="alquiler">Alquiler</option>
                                 </select>
                             </p>
                         </div>

@@ -247,7 +247,7 @@
 	<a href="#">¡Conoce y únete a la causa!</a>
 </div>
 <div class="col-md-6 caraslogo">
-	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/caras-felices.png ?>" />
+	<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/caras-felices.png" />
 </div>
 </div>
 <div class="content row pie">
@@ -271,7 +271,7 @@
 			</ul>
 		</div>
 	</div>
-	<div class="col-md-6 pieder">
+	<div id="contacto" class="col-md-6 pieder">
 		<div class="col-md-3">
 			<p class="telf">0286 9613446</p>
 			<p class="telf">0424 9163065</p>
