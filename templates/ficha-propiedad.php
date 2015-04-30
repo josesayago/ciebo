@@ -14,46 +14,46 @@ get_template_part('templates/header');
 			<div class="ficha-thumbs">
 				<div class="row">
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-1.png" />
 					</div>
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-2.png" />
 					</div>
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
-					</div>
-					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
-					</div>
-					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-3.png" />
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-4.png" />
 					</div>
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-5.png" />
 					</div>
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-1.png" />
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-2.png" />
 					</div>
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-3.png" />
 					</div>
 					<div class="col-md-4 col-xs-4">
-						<img src="http://placehold.it/70x70" />
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-4.png" />
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-xs-4">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-5.png" />
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-1.png" />
+					</div>
+					<div class="col-md-4 col-xs-4">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/70x70-2.png" />
 					</div>
 				</div>
 			</div>
@@ -82,25 +82,39 @@ get_template_part('templates/header');
 							<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 							<li data-target="#carousel-example-generic" data-slide-to="1"></li>
 							<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+							<li data-target="#carousel-example-generic" data-slide-to="4"></li>
 						</ol>
 						<!-- Wrapper for slides -->
 						<div class="carousel-inner" role="listbox">
 							<div class="item active">
-								<img src="http://placehold.it/670x370" alt="...">
+								<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/670x370-1.png" alt="...">
 								<div class="carousel-caption">
-									Vista Frente
+									Vista 1
 								</div>
 					    	</div>
 					    	<div class="item">
-					      		<img src="http://placehold.it/670x370" alt="...">
+					      		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/670x370-2.png" alt="...">
 					      		<div class="carousel-caption">
-					        		Pasillo
+					        		Vista 2
 					      		</div>
 					    	</div>
 					    	<div class="item">
-					      		<img src="http://placehold.it/670x370" alt="...">
+					      		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/670x370-3.png" alt="...">
 					      		<div class="carousel-caption">
-					        		Estacionamiento
+					        		Vista 3
+					      		</div>
+					    	</div>
+					    	<div class="item">
+					      		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/670x370-4.png" alt="...">
+					      		<div class="carousel-caption">
+					        		Vista 4
+					      		</div>
+					    	</div>
+					    	<div class="item">
+					      		<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/670x370-5.png" alt="...">
+					      		<div class="carousel-caption">
+					        		Vista 5
 					      		</div>
 					    	</div>
 					  	</div>
@@ -119,9 +133,9 @@ get_template_part('templates/header');
 					<div class="ficha-agente corredor">
 						<div class="pic-m6">&nbsp;</div>
 						<div class="nombre">Ahilad Cenet</div>
-						<div class="telf"><img src="http://ciebo.loc/wp-content/themes/ciebo/assets/images/iconos/telefono.png" /> 0286-9629778</div>
-						<div class="cel"><img src="http://ciebo.loc/wp-content/themes/ciebo/assets/images/iconos/celular.png" /> 0414-8285311</div>
-						<div class="email"><img src="http://ciebo.loc/wp-content/themes/ciebo/assets/images/iconos/mail.png" /> cenet@gmail.com</div>
+						<div class="telf"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/iconos/telefono.png" /> 0286-9629778</div>
+						<div class="cel"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/iconos/celular.png" /> 0414-8285311</div>
+						<div class="email"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/iconos/mail.png" /> cenet@gmail.com</div>
 						<span class="nro-afiliado">#023</span>
 					</div>
 				</div>
@@ -172,7 +186,7 @@ get_template_part('templates/header');
 				</div>
 				<div class="row btn-buscador">
 					<div class="col-md-12 col-xs-12">
-						<p class="text-right"><a href="/buscador" class="btn">Ir al buscador</a></p>
+						<p class="text-right"><a href="<?php echo get_bloginfo('url'); ?>/buscador" class="btn">Ir al buscador</a></p>
 					</div>
 				</div>
 			</div>

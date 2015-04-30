@@ -812,7 +812,8 @@ body {
   width: 100%;
   font-size: 1.875em;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif; }
 
 .local-nav .nav a {
   border: 1px solid #d8d8d8;
@@ -838,7 +839,8 @@ body {
     margin-left: 0; }
 
   .page-template-nosotros .page-banner {
-    margin: 20em 0 0 0; }
+    margin: 20em 0 0 0;
+    font-family: "Lato", sans-serif; }
 
   .local-nav .nav {
     display: inline;
@@ -1015,7 +1017,8 @@ body {
   .page-banner {
     margin: 0 auto !important;
     width: 100% !important;
-    text-align: center !important; }
+    text-align: center !important;
+    font-family: "Lato", sans-serif; }
 
   .afiliados .col-xs-6:nth-of-type(2) {
     text-align: right;
@@ -1333,7 +1336,8 @@ div.pqrs, div.tuv, div.wxyz {
   width: 100%;
   font-size: 1.875em;
   font-weight: bold;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif; }
 
 @media (min-width: 801px) {
   .certificacion-wrapper .cert-titulo {
@@ -1364,7 +1368,9 @@ div.pqrs, div.tuv, div.wxyz {
   font-size: 1em;
   text-indent: 1.5em; }
 
-.certificacion-wrapper h2,
+.certificacion-wrapper .page-banner {
+  font-family: "Lato", sans-serif; }
+
 .certificacion-wrapper h3 {
   font-family: "Merriweather", sans-serif;
   color: #33b2b2; }

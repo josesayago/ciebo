@@ -79,7 +79,7 @@ get_template_part('templates/header');
 				<div class="row">
 					<div class="apto col-md-3 col-xs-10">
 						<div class="apto-img">
-							<img src="http://placehold.it/200x200" />
+							<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/ficha/200x200.png" />
 						</div>
 						<div class="apto-desc">
 							<h3><a href="propiedad/">Apartamento Res. Kamoiran Alta Vista Norte</a></h3>

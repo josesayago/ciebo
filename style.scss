@@ -729,6 +729,7 @@ body {
 	font-size: 1.875em;
 	font-weight: bold;
 	text-transform: uppercase;
+	font-family: $lato-sans;
 }
 .local-nav .nav a {
 	border: 1px solid $gray_5;
@@ -755,6 +756,7 @@ body {
 	}
 	.page-template-nosotros .page-banner {
 		margin: 20em 0 0 0;
+		font-family: $lato-sans;
 	}
 	.local-nav .nav {
 		display: inline;
@@ -872,6 +874,7 @@ body {
 		margin: 0 auto !important;
 		width: 100% !important;
 		text-align: center !important;
+		font-family: $lato-sans;
 	}
 	.afiliados .col-xs-6:nth-of-type(2) {
 		text-align: right;
@@ -1162,6 +1165,7 @@ div.pqrs, div.tuv, div.wxyz {
 	font-size: 1.875em;
 	font-weight: bold;
 	text-transform: uppercase;
+	font-family: $lato-sans;
 }
 @media (min-width: 801px) {
 	.certificacion-wrapper .cert-titulo {
@@ -1196,7 +1200,9 @@ div.pqrs, div.tuv, div.wxyz {
 	font-size: 1em;
 	text-indent: 1.5em;
 }
-.certificacion-wrapper h2, 
+.certificacion-wrapper .page-banner {
+	font-family: $lato-sans;
+} 
 .certificacion-wrapper h3 {
 	font-family: $merriweather;
 	color: $aqua;
