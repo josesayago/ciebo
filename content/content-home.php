@@ -3,7 +3,7 @@
 		<?php
 			if( function_exists( 'single_latest_posts' ) ) {
 				$params_tips = array(
-					'title'				=> 'Tips inmobiliarios',
+					'title'				=> 'Blog inmobiliario',
 					'title_only'		=> 'false',
 					'auto_excerpt'		=> 'true',
 					'excerpt_length'	=> 24,

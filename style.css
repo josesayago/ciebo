@@ -2104,5 +2104,44 @@ div.pqrs, div.tuv, div.wxyz {
 
   .ficha-mapa .col-md-2 img {
     padding-top: 5%; } }
+.overlay-ads {
+  padding: 15% 20% 20% 20%;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+  z-index: 9999999999;
+  width: 100%;
+  height: 83.8%;
+  background: rgba(0, 0, 0, 0.7);
+  vertical-align: middle; }
+
+.overlay-ads .ad-logo {
+  vertical-align: middle;
+  margin: -7% 0 0 15%; }
+
+.overlay-ads ul {
+  list-style: none;
+  margin: -7% 0 0 0; }
+
+.overlay-ads ul:last-child {
+  margin: 2% 0 0 0; }
+
+.overlay-ads .overlay-inner .col-md-6:first-child {
+  border-right: 1px solid #b3b3b3;
+  margin: -5% 0 0 0;
+  height: 200%; }
+
+.overlay-ads h2 {
+  text-transform: uppercase;
+  font-size: 1.185em;
+  color: #4e4e4e;
+  margin: -10% 0 5% 12%; }
+
+.overlay-ads .overlay-inner {
+  margin: -5% 0 0 0;
+  background: #d8d8d8;
+  width: 100%;
+  height: 150%;
+  padding: 8% 0; }
 
 /*# sourceMappingURL=style.css.map */
